@@ -4,7 +4,6 @@
 <head>
    <meta charset="utf-8">
    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
    <title>Desa Karangtengah</title>
    <meta content="" name="description">
    <meta content="" name="keywords">
@@ -20,6 +19,8 @@
    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+   <link href="assets/css/style.css" rel="stylesheet">
+   <link href="assets/css/carousel.css" rel="stylesheet">
 
    <style>
       .bd-placeholder-img {
@@ -36,10 +37,6 @@
          }
       }
    </style>
-
-   <!-- Template Main CSS File -->
-   <link href="assets/css/style.css" rel="stylesheet">
-   <link href="assets/css/carousel.css" rel="stylesheet">
 </head>
 
 <body>
@@ -48,9 +45,8 @@
    <header id="header" class="header fixed-top">
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-         <a href="index.html" class="logo d-flex align-items-center">
-            Desa Karangtengah
-
+         <a href="index.html" class="logo align-items-center">
+            <img src="./assets/img/karangtengah.png" style="width: 140px; height: 125x;" alt="">
          </a>
 
          <nav id="navbar" class="navbar">
@@ -70,10 +66,17 @@
                      </li>
                   </ul>
                </li>
+               <li><a class="nav-link scrollto" href="#about">Berita Desa</a></li>
                <li><a class="nav-link scrollto" href="#about">Wisata</a></li>
                <li><a class="nav-link scrollto" href="#about">Produk Desa</a></li>
                <li>
-                  <input type="search" class="form-control form-control-light" placeholder="Cari...">
+                  <a>
+                     <div class="input-group">
+                        <input type="search" class="form-control form-control-light" placeholder="Cari...">
+
+                     </div>
+                  </a>
+
 
 
                </li>
