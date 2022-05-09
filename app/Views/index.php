@@ -27,11 +27,10 @@
 </head>
 
 <body>
+   <!-- Bagian Header -->
    <?php
    include 'header.php';
    ?>
-
-
 
    <main id="main">
 
