@@ -50,8 +50,64 @@
    <main id="main">
       <div class="container">
          <div class="row">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+               <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               </div>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" />
+                     </svg>
 
-            <main class="my-5">
+                     <div class="container">
+                        <div class="carousel-caption text-start">
+                           <h1>Example headline.</h1>
+                           <p>Some representative placeholder content for the first slide of the carousel.</p>
+                           <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" />
+                     </svg>
+
+                     <div class="container">
+                        <div class="carousel-caption">
+                           <h1>Another example headline.</h1>
+                           <p>Some representative placeholder content for the second slide of the carousel.</p>
+                           <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" />
+                     </svg>
+
+                     <div class="container">
+                        <div class="carousel-caption text-end">
+                           <h1>One more for good measure.</h1>
+                           <p>Some representative placeholder content for the third slide of this carousel.</p>
+                           <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+               </button>
+            </div>
+
+            <main class="my-2">
                <div class="container">
                   <!--Grid row-->
                   <div class="row">
@@ -59,7 +115,7 @@
                      <div class="col-md-10 mb-4">
                         <!--Section: Content-->
                         <section>
-                           <h3>Berita Desa</h3><br>
+                           <h3>Desa Wisata</h3><br>
                            <!-- Post -->
                            <div class="row">
                               <div class="col-md-5 mb-5">
@@ -81,81 +137,13 @@
                                     necessitatibus itaque error alias repellendus nemo reiciendis aperiam quisquam
                                  </p>
 
-                                 <button type="button" class="btn-hijau">Lihat Selengkapnya</button>
+                                 <a href="/website-desawisata-karangtengah/public/home/detail_wisata" type="button" class="btn-hijau">Lihat Selengkapnya</a>
                               </div>
                            </div>
-
-                           <div class="row">
-                              <div class="col-md-5 mb-5">
-                                 <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
-                                    <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="img-fluid" />
-                                    <a href="#!">
-                                       <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                    </a>
-                                 </div>
-                              </div>
-
-                              <div class="col-md-7 mb-4">
-                                 <h5>Very long post title</h5>
-                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione
-                                    necessitatibus itaque error alias repellendus nemo reiciendis aperiam quisquam
-                                    minus ipsam reprehenderit commodi ducimus, in dicta aliquam eveniet dignissimos
-                                    magni.
-                                    necessitatibus itaque error alias repellendus nemo reiciendis aperiam quisquam
-                                 </p>
-
-                                 <button type="button" class="btn-hijau">Lihat Selengkapnya</button>
-                              </div>
-                           </div>
-
-                           <div class="row">
-                              <div class="col-md-5 mb-5">
-                                 <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
-                                    <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="img-fluid" />
-                                    <a href="#!">
-                                       <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                    </a>
-                                 </div>
-                              </div>
-
-                              <div class="col-md-7 mb-4">
-                                 <h5>Very long post title</h5>
-                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione
-                                    necessitatibus itaque error alias repellendus nemo reiciendis aperiam quisquam
-                                    minus ipsam reprehenderit commodi ducimus, in dicta aliquam eveniet dignissimos
-                                    magni.
-                                    necessitatibus itaque error alias repellendus nemo reiciendis aperiam quisquam
-                                 </p>
-
-                                 <button type="button" class="btn-hijau">Lihat Selengkapnya</button>
-                              </div>
-                           </div>
-
-
-
-
+                        </section>
                      </div>
-
-                     <!--Grid row-->
-                     <!-- Pagination -->
-                     <nav class="my-4" aria-label="...">
-                        <ul class="pagination pagination-circle justify-content-center">
-                           <li class="page-item">
-                              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                           </li>
-                           <li class="page-item"><a class="page-link" href="#">1</a></li>
-                           <li class="page-item active" aria-current="page">
-                              <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                           </li>
-                           <li class="page-item"><a class="page-link" href="#">3</a></li>
-                           <li class="page-item">
-                              <a class="page-link" href="#">Next</a>
-                           </li>
-                        </ul>
-                     </nav>
                   </div>
+               </div>
 
 
             </main>
@@ -165,7 +153,7 @@
       </div>
    </main>
 
-   <!-- ======= Bagian Footer ======= -->
+
    <footer class="footer">
 
       <div class="footer-top">
@@ -205,6 +193,7 @@
             </div>
          </div>
       </div>
+
 
       <div class="container">
          <div class="copyright">

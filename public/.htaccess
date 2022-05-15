@@ -1,7 +1,7 @@
 Options -MultiViews
 
 RewriteEngine On
-RewriteBase /desain-pemrograman-web/website-desawisata-karangtengah/public
+RewriteBase /website-desawisata-karangtengah/public
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 

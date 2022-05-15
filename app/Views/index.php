@@ -5,35 +5,50 @@
    <meta charset="utf-8">
    <meta content="width=device-width, initial-scale=1.0" name="viewport">
    <title>Desa Karangtengah</title>
-   <meta content="" name="description">
-   <meta content="" name="keywords">
    <link href="assets/img/favicon.png" rel="icon">
-   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-   <!-- Vendor CSS Files -->
-   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-   <link href="assets/css/style.css" rel="stylesheet">
-   <link href="assets/css/carousel.css" rel="stylesheet">
-
-   <link rel="stylesheet" href="assets/css/mdb.min.css" />
-   <link rel="stylesheet" href="assets/css/style.css" />
-
-
+   <link href="/website-desawisata-karangtengah/public/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="/website-desawisata-karangtengah/public/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+   <link href="/website-desawisata-karangtengah/public/css/carousel.css" rel="stylesheet">
+   <link href="/website-desawisata-karangtengah/public/css/mdb.min.css" rel="stylesheet">
+   <link href="/website-desawisata-karangtengah/public/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-   <!-- Bagian Header -->
-   <?php
-   include 'header.php';
-   ?>
 
+   <!-- =======  Bagian Header ======= -->
+   <header id="header" class="header fixed-top">
+      <div class="container container-xl d-flex align-items-center justify-content-between">
+         <a href="/website-desawisata-karangtengah/public/home" class="logo align-items-center">
+            <img src="/website-desawisata-karangtengah/public/assets/img/karangtengah.png" alt="">
+         </a>
+         <!-- =======  Bagian Navigasi ======= -->
+         <nav id="navbar" class="navbar">
+            <ul>
+               <li><a class="nav-link" href="/website-desawisata-karangtengah/public/home">Beranda</a></li>
+               <li class="dropdown"><a href=""><span>Profil Desa</span> <i class="bi bi-chevron-down"></i></a>
+                  <ul>
+                     <li><a href="/website-desawisata-karangtengah/public/home/visimisi">Visi dan Misi</a></li>
+                     <li><a href="/website-desawisata-karangtengah/public/home/sejarah">Sejarah Desa</a></li>
+                  </ul>
+               </li>
+               <li><a class="nav-link" href="/website-desawisata-karangtengah/public/home/berita">Berita Desa</a></li>
+               <li><a class="nav-link" href="/website-desawisata-karangtengah/public/home/wisata">Wisata</a></li>
+               <li><a class="nav-link" href="/website-desawisata-karangtengah/public/home/produk">Produk Desa</a></li>
+               <li>
+                  <a>
+                     <div class="input-group">
+                        <input type="search" class="form-control form-control-light" placeholder="Cari...">
+                     </div>
+                  </a>
+               </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+         </nav>
+      </div>
+   </header>
+
+   <!-- =======  Bagian Halaman Utama ======= -->
    <main id="main">
-
       <div class="container">
          <div class="row">
             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -101,7 +116,7 @@
                      <div class="row">
                         <div class="col-md-4 mb-4">
                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
-                              <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="img-fluid" />
+                              <img src="https://mdbootstrap.com/img/new/standard/nature/002.jpg" class="img-fluid" />
                               <a href="#!">
                                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                               </a>
@@ -110,14 +125,13 @@
 
                         <div class="col-md-8 mb-4">
                            <h5>Very long post title</h5>
-                           <p>
+                           <p class="mb-2">
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione
                               necessitatibus itaque error alias repellendus nemo reiciendis aperiam quisquam
                               minus ipsam reprehenderit commodi ducimus, in dicta aliquam eveniet dignissimos
                               magni.
                            </p>
-
-                           <button type="button" class="btn btn-primary">Read</button>
+                           <button type="button" class="btn-hijau">Baca Selengkapnya</button>
                         </div>
                      </div>
 
@@ -134,74 +148,21 @@
 
                         <div class="col-md-8 mb-4">
                            <h5>Very long post title</h5>
-                           <p>
+                           <p class="mb-2">
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione
                               necessitatibus itaque error alias repellendus nemo reiciendis aperiam quisquam
                               minus ipsam reprehenderit commodi ducimus, in dicta aliquam eveniet dignissimos
                               magni.
                            </p>
-
-                           <button type="button" class="btn btn-primary">Read</button>
+                           <button type="button" class="btn-hijau">Baca Selengkapnya</button>
                         </div>
                      </div>
 
-                     <!-- Post -->
-                     <div class="row">
-                        <div class="col-md-4 mb-4">
-                           <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
-                              <img src="https://mdbootstrap.com/img/new/standard/nature/023.jpg" class="img-fluid" />
-                              <a href="#!">
-                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                              </a>
-                           </div>
-                        </div>
-
-                        <div class="col-md-8 mb-4">
-                           <h5>Very long post title</h5>
-                           <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione
-                              necessitatibus itaque error alias repellendus nemo reiciendis aperiam quisquam
-                              minus ipsam reprehenderit commodi ducimus, in dicta aliquam eveniet dignissimos
-                              magni.
-                           </p>
-
-                           <button type="button" class="btn btn-primary">Read</button>
-                        </div>
-                     </div>
-
-                     <!-- Post -->
-
                   </section>
-                  <!--Section: Content-->
                </div>
-               <!--Grid column-->
 
 
-               <!--Grid column-->
-               <div class="col-md-3 mb-4">
-                  <!--Section: Sidebar-->
-                  <section class="sticky-top" style="top: 80px;">
-                     <!--Section: Ad-->
-                     <section class="text-center border-bottom pb-4 mb-4">
-                        <div class="bg-image hover-overlay ripple mb-4">
-                           <img src="https://mdbootstrap.com/img/new/standard/nature/023.jpg" class="img-fluid" />
-                           <a href="https://mdbootstrap.com/docs/standard/" target="_blank">
-                              <div class="mask" style="background-color: rgba(57, 192, 237, 0.2);"></div>
-                           </a>
-                        </div>
-                        <h5>Berita</h5>
 
-                        <p>
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione necessitatibus
-                           itaque error
-                        </p>
-
-                     </section>
-                     <!--Section: Ad-->
-                  </section>
-                  <!--Section: Sidebar-->
-               </div>
-               <!--Grid column-->
 
             </div>
             <button type="button" class="btn btn-outline-primary">Lihat Selengkapnya</button>
@@ -339,7 +300,7 @@
 
    </main><!-- End #main -->
 
-   <!-- ======= Footer ======= -->
+   <!-- ======= Bagian Footer ======= -->
    <footer class="footer">
 
       <div class="footer-top">
@@ -388,20 +349,8 @@
    </footer><!-- End Footer -->
 
    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-   <!-- Vendor JS Files -->
-   <script src="assets/vendor/purecounter/purecounter.js"></script>
-   <script src="assets/vendor/aos/aos.js"></script>
-   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-   <script src="assets/vendor/php-email-form/validate.js"></script>
-
-   <!-- Template Main JS File -->
-   <script src="assets/js/main.js"></script>
-   <script type="text/javascript" src="assets/js/mdb.min.js"></script>
-   <script type="text/javascript" src="assets/js/script.js"></script>
+   <script src="../public/js/main.js"></script>
+   <script type="text/javascript" src="../public/js/mdb.min.js"></script>
 
 </body>
 
