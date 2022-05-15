@@ -63,8 +63,8 @@
                      <div class="container">
 
                         <div class="carousel-caption">
-                           <h1>Banner Desa</h1>
-                           <p>Some representative placeholder content for the second slide of the carousel.</p>
+                           <h1>DESA KARANG TENGAH</h1>
+                           <p>Kecamatan Cilongok, Kabupaten Banyumas, Provinsi Jawa Tengah, Indonesia</p>
 
                         </div>
                      </div>
@@ -116,7 +116,7 @@
                      <div class="row">
                         <div class="col-md-4 mb-4">
                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
-                              <img src="https://mdbootstrap.com/img/new/standard/nature/002.jpg" class="img-fluid" />
+                              <img src="/website-desawisata-karangtengah/public/assets/img/beritaterkini/berita1.jpg" class="img-fluid" />
                               <a href="#!">
                                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                               </a>
@@ -124,12 +124,12 @@
                         </div>
 
                         <div class="col-md-8 mb-4">
-                           <h5>Very long post title</h5>
+                           <h5>Kemitraan Mahasiswa ITTP dengan Desa Karangtengah</h5>
                            <p class="mb-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione
-                              necessitatibus itaque error alias repellendus nemo reiciendis aperiam quisquam
-                              minus ipsam reprehenderit commodi ducimus, in dicta aliquam eveniet dignissimos
-                              magni.
+                          Sebanyak 4 mahasiswa prodi S1 Software Engineering Melaksanakan Kegiatan Kemitraan
+                          Dengan desa wisata Karangtengah Kab Cilongok. Kemitraan ini untuk memenuhi project 
+                          tugas akhir, dengan mengembangkan sebuah perangkat lunak yaitu website desa wisata
+                          sebagai media informasi dan promosi. 
                            </p>
                            <button type="button" class="btn-hijau">Baca Selengkapnya</button>
                         </div>
@@ -139,7 +139,7 @@
                      <div class="row">
                         <div class="col-md-4 mb-4">
                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
-                              <img src="https://mdbootstrap.com/img/new/standard/nature/002.jpg" class="img-fluid" />
+                           <img src="/website-desawisata-karangtengah/public/assets/img/beritaterkini/berita1.jpg" class="img-fluid" />
                               <a href="#!">
                                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                               </a>
@@ -147,12 +147,12 @@
                         </div>
 
                         <div class="col-md-8 mb-4">
-                           <h5>Very long post title</h5>
+                           <h5>Kemitraan Mahasiswa ITTP dengan Desa Karangtengah</h5>
                            <p class="mb-2">
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione
-                              necessitatibus itaque error alias repellendus nemo reiciendis aperiam quisquam
-                              minus ipsam reprehenderit commodi ducimus, in dicta aliquam eveniet dignissimos
-                              magni.
+                           Sebanyak 4 mahasiswa prodi S1 Software Engineering Melaksanakan Kegiatan Kemitraan
+                          Dengan desa wisata Karangtengah Kab Cilongok. Kemitraan ini untuk memenuhi project 
+                          tugas akhir, dengan mengembangkan sebuah perangkat lunak 
+                          yaitu website desa wisata sebagai media informasi dan promosi. 
                            </p>
                            <button type="button" class="btn-hijau">Baca Selengkapnya</button>
                         </div>
@@ -311,8 +311,10 @@
                      <img src="assets/img/karangtengah.png" alt="">
 
                   </a>
-                  <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                     valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                  <p>Desa KarangTengah adalah desa di Kecamatan Cilongok, Banyumas, Jawa Tengah, yang terletak kurang lebih 15 Kilometer ke arah barat dari Purwokerto.
+                     Desa KarangTengah memiliki 7 dusun atau RW, yaitu Karang Tengan, Lebaksiu, Karanganyar, Cirongge, Menggala, Karang Nangka, Semingkir yang memiliki luas wilayah 9.3427 km², dengan jumlah penduduk sebanyak 9375 jiwa.
+                     Desa ini memiliki kawasan wisata yang cukup terkenal yaitu wanawisata Curug Cipendok, dengan ketinggian curug 92 meter, langsung dibawah kawasan hutan Gunung Slamet.
+                  </p>
                   <div class="social-links mt-3">
                      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -324,11 +326,11 @@
                <div class="col-lg-2 col-6 footer-links">
                   <h4>Kontak Kami</h4>
                   <p>
-                     A108 Adam Street <br>
-                     New York, NY 535022<br>
-                     United States <br><br>
-                     <strong>Phone:</strong> +1 5589 55488 55<br>
-                     <strong>Email:</strong> info@example.com<br>
+                     Desa Karang Tengah <br>
+                     Kecamatan Cilongok<br>
+                     Kabupaten Banyumas, Jawa Tengah<br><br>
+                     <strong>Phone: 081287756542</strong> <br>
+                     <strong>Email:</strong>karangtengahdesawisata@gmail.com<br>
                   </p>
                </div>
 

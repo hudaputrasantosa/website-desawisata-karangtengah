@@ -64,7 +64,7 @@
                            <div class="row">
                               <div class="col-md-5 mb-5">
                                  <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
-                                    <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="img-fluid" />
+                                    <img src="/website-desawisata-karangtengah/public/assets/img/beritaterkini/berita1.jpg" class="img-fluid" />
                                     <a href="#!">
                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                                     </a>
@@ -72,13 +72,12 @@
                               </div>
 
                               <div class="col-md-7 mb-4">
-                                 <h5>Very long post title</h5>
+                                 <h5>Kemitraan Mahasiswa ITTP dengan Desa Karangtengah</h5>
                                  <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione
-                                    necessitatibus itaque error alias repellendus nemo reiciendis aperiam quisquam
-                                    minus ipsam reprehenderit commodi ducimus, in dicta aliquam eveniet dignissimos
-                                    magni.
-                                    necessitatibus itaque error alias repellendus nemo reiciendis aperiam quisquam
+                                 Sebanyak 4 mahasiswa prodi S1 Software Engineering Melaksanakan Kegiatan Kemitraan
+                          Dengan desa wisata Karangtengah Kab Cilongok. Kemitraan ini untuk memenuhi project 
+                          tugas akhir, dengan mengembangkan sebuah perangkat lunak yaitu website desa wisata
+                          sebagai media informasi dan promosi. 
                                  </p>
 
                                  <button type="button" class="btn-hijau">Lihat Selengkapnya</button>
@@ -88,7 +87,7 @@
                            <div class="row">
                               <div class="col-md-5 mb-5">
                                  <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
-                                    <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="img-fluid" />
+                                    <img src="/website-desawisata-karangtengah/public/assets/img/beritaterkini/berita2.jpg" class="img-fluid" />
                                     <a href="#!">
                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                                     </a>
@@ -96,13 +95,11 @@
                               </div>
 
                               <div class="col-md-7 mb-4">
-                                 <h5>Very long post title</h5>
+                                 <h5>Bukit Manggala Karang Tengah Cilongok Ramai Dikunjungi 400 Pengunjung Pada Sabtu dan Minggu</h5>
                                  <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione
-                                    necessitatibus itaque error alias repellendus nemo reiciendis aperiam quisquam
-                                    minus ipsam reprehenderit commodi ducimus, in dicta aliquam eveniet dignissimos
-                                    magni.
-                                    necessitatibus itaque error alias repellendus nemo reiciendis aperiam quisquam
+                                    Wisata Bukit Manggala ini merupakan wisata dengan pemandangan hamparan bukit yang hijau
+                                    yang dianggap seperti diluar negeri yaitu Selandia Baru. Selain disuguhi panorama pemandangan yang hijau
+                                    pengunjung juga dapat melihat sapi dan domba yang dilepas dilokasi itu.
                                  </p>
 
                                  <button type="button" class="btn-hijau">Lihat Selengkapnya</button>
@@ -112,7 +109,7 @@
                            <div class="row">
                               <div class="col-md-5 mb-5">
                                  <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
-                                    <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="img-fluid" />
+                                    <img src="/website-desawisata-karangtengah/public/assets/img/beritaterkini/berita3.jpg" class="img-fluid" />
                                     <a href="#!">
                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                                     </a>
@@ -120,13 +117,12 @@
                               </div>
 
                               <div class="col-md-7 mb-4">
-                                 <h5>Very long post title</h5>
+                                 <h5>Pengusaha Ikan Dewa di Karang Tengah Cilongok Berhenti Produksi Gara-gara Air Sungai Keruh
+
+                                 </h5>
                                  <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione
-                                    necessitatibus itaque error alias repellendus nemo reiciendis aperiam quisquam
-                                    minus ipsam reprehenderit commodi ducimus, in dicta aliquam eveniet dignissimos
-                                    magni.
-                                    necessitatibus itaque error alias repellendus nemo reiciendis aperiam quisquam
+                                 Pemilik kolam ikan Dewa di desa Karang Tengah Kecamatan Cilongok Banyumas mengeluhkan air sungai Prukut yang kembali keruh akhir-akhir ini.
+                                 Padahal, sungai itu jadi pemasok utama kebutuhan air kolam ikan berkelas itu.
                                  </p>
 
                                  <button type="button" class="btn-hijau">Lihat Selengkapnya</button>
@@ -165,53 +161,55 @@
       </div>
    </main>
 
-   <!-- ======= Bagian Footer ======= -->
-   <footer class="footer">
+    <!-- ======= Bagian Footer ======= -->
+    <footer class="footer">
 
-      <div class="footer-top">
-         <div class="container">
-            <div class="row gy-4">
-               <div class="col-lg-5 col-md-12 footer-info">
-                  <a href="index.html" class="logo d-flex align-items-center">
-                     <img src="/desain-pemrograman-web/website-desawisata-karangtengah/public/assets/img/karangtengah.png" alt="">
+<div class="footer-top">
+   <div class="container">
+      <div class="row gy-4">
+         <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+               <img src="assets/img/karangtengah.png" alt="">
 
-                  </a>
-                  <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                     valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-                  <div class="social-links mt-3">
-                     <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                     <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                     <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-
-                  </div>
-               </div>
-
-               <div class="col-lg-2 col-6 footer-links">
-                  <h4>Kontak Kami</h4>
-                  <p>
-                     A108 Adam Street <br>
-                     New York, NY 535022<br>
-                     United States <br><br>
-                     <strong>Phone:</strong> +1 5589 55488 55<br>
-                     <strong>Email:</strong> info@example.com<br>
-                  </p>
-               </div>
-
-               <div class="col-lg-5 col-md-12 footer-links">
-                  <h4>Lokasi Google Maps Desa</h4>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63315.911774581575!2d109.12677444999998!3d-7.326413549999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f8a4e4942c393%3A0xfb1656ebb45cb522!2sKarangtengah%2C%20Cilongok%2C%20Banyumas%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1651820938369!5m2!1sen!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
-               </div>
+            </a>
+            <p>Desa KarangTengah adalah desa di Kecamatan Cilongok, Banyumas, Jawa Tengah, yang terletak kurang lebih 15 Kilometer ke arah barat dari Purwokerto.
+               Desa KarangTengah memiliki 7 dusun atau RW, yaitu Karang Tengan, Lebaksiu, Karanganyar, Cirongge, Menggala, Karang Nangka, Semingkir yang memiliki luas wilayah 9.3427 km², dengan jumlah penduduk sebanyak 9375 jiwa.
+               Desa ini memiliki kawasan wisata yang cukup terkenal yaitu wanawisata Curug Cipendok, dengan ketinggian curug 92 meter, langsung dibawah kawasan hutan Gunung Slamet.
+            </p>
+            <div class="social-links mt-3">
+               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
 
             </div>
          </div>
-      </div>
 
-      <div class="container">
-         <div class="copyright">
-            &copy; Copyright <strong><span>Pemerintah Desa Karangtengah</span></strong>. All Rights Reserved
+         <div class="col-lg-2 col-6 footer-links">
+            <h4>Kontak Kami</h4>
+            <p>
+               Desa Karang Tengah <br>
+               Kecamatan Cilongok<br>
+               Kabupaten Banyumas, Jawa Tengah<br><br>
+               <strong>Phone: 081287756542</strong> <br>
+               <strong>Email:</strong>karangtengahdesawisata@gmail.com<br>
+            </p>
          </div>
+
+         <div class="col-lg-5 col-md-12 footer-links">
+            <h4>Lokasi Google Maps Desa</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63315.911774581575!2d109.12677444999998!3d-7.326413549999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f8a4e4942c393%3A0xfb1656ebb45cb522!2sKarangtengah%2C%20Cilongok%2C%20Banyumas%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1651820938369!5m2!1sen!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+
       </div>
-   </footer><!-- End Footer -->
+   </div>
+</div>
+
+<div class="container">
+   <div class="copyright">
+      &copy; Copyright <strong><span>Pemerintah Desa Karangtengah</span></strong>. All Rights Reserved
+   </div>
+</div>
+</footer><!-- End Footer -->
 
    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
    <script src="/desain-pemrograman-web/website-desawisata-karangtengah/public/js/main.js"></script>

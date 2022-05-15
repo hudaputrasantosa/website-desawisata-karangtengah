@@ -113,48 +113,48 @@
                   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                      <div class="col">
                         <div class="card shadow-sm">
-                           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                           <img src="/website-desawisata-karangtengah/public/assets/img/produkdesa/industritahu.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                               <title>Placeholder</title>
-                              <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                           </svg>
-                           <div class="card-body">
-                              <h5>Ginjal Ori</h5>
-                              <h4 style="font-weight: bold;">Rp. 50.000.000</h4>
-                              <p>This is a wider card with supporting text below as a natural lead-in </p>
-                              <div class="d-flex justify-content-between align-items-center">
-                                 <a href="" type="button" class="btn-hijau">Beli Sekarang</a>
-                                 <small class="text-muted">9 mins</small>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col">
-                        <div class="card shadow-sm">
-                           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                              <title>Placeholder</title>
-                              <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                           </svg>
-                           <div class="card-body">
-                              <h5>Ginjal Ori</h5>
-                              <h4 style="font-weight: bold;">Rp. 50.000.000</h4>
-                              <p>This is a wider card with supporting text below as a natural lead-in </p>
-                              <div class="d-flex justify-content-between align-items-center">
-                                 <a href="" type="button" class="btn-hijau">Beli Sekarang</a>
-                                 <small class="text-muted">9 mins</small>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col">
-                        <div class="card shadow-sm">
-                           <img src="/website-desawisata-karangtengah/public/assets/img/portfolio/portfolio-1.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                           <title>Placeholder</title>
-                           <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                              <rect width="100%" height="100%" fill="#55595c" />
                            </img>
                            <div class="card-body">
-                              <h5>Ginjal Ori</h5>
-                              <h4 style="font-weight: bold;">Rp. 50.000.000</h4>
-                              <p>This is a wider card with supporting text below as a natural lead-in </p>
+                              <h5>Industri Tahu</h5>
+                              <h4 style="font-weight: bold;">Rp. 5000/bungkus</h4>
+                              <p>Industri Tahu ini dikelola oleh ibu murni Rt 1 Rw 1 warga desa Karangtengah</p>
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <a href="" type="button" class="btn-hijau">Beli Sekarang</a>
+                                 <small class="text-muted">9 mins</small>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col">
+                        <div class="card shadow-sm">
+                           <img src="/website-desawisata-karangtengah/public/assets/img/produkdesa/gulakelapa.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                              <title>Placeholder</title>
+                              <rect width="100%" height="100%" fill="#55595c" />
+                           </img>
+                           <div class="card-body">
+                              <h5>Gula Kelapa</h5>
+                              <h4 style="font-weight: bold;">Rp. 16.000/kg</h4>
+                              <p>Gula Kelapa ini dikelola oleh bapak Sunaryo Rt 1 Rw 2 warga desa Karangtengah</p>
+                              <div class="d-flex justify-content-between align-items-center">
+                                 <a href="" type="button" class="btn-hijau">Beli Sekarang</a>
+                                 <small class="text-muted">9 mins</small>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col">
+                        <div class="card shadow-sm">
+                           <img src="/website-desawisata-karangtengah/public/assets/img/produkdesa/tehhijau.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                           <title>Placeholder</title>
+                           <rect width="100%" height="100%" fill="#55595c" />
+                           </img>
+                           <div class="card-body">
+                              <h5>Pengolahan Teh Hijau</h5>
+                              <h4 style="font-weight: bold;">Rp. 60.000/kg</h4>
+                              <p>Pengolahan Teh Hijau ini dikelola oleh bapak Hadi Rt 3 Rw 5 warga desa Karang Tengah </p>
                               <div class="d-flex justify-content-between align-items-center">
                                  <a href="" type="button" class="btn-hijau">Beli Sekarang</a>
                                  <small class="text-muted">9 mins</small>
@@ -172,53 +172,55 @@
    </main>
 
 
-   <footer class="footer">
+    <!-- ======= Bagian Footer ======= -->
+    <footer class="footer">
 
-      <div class="footer-top">
-         <div class="container">
-            <div class="row gy-4">
-               <div class="col-lg-5 col-md-12 footer-info">
-                  <a href="index.html" class="logo d-flex align-items-center">
-                     <img src="/desain-pemrograman-web/website-desawisata-karangtengah/public/assets/img/karangtengah.png" alt="">
+<div class="footer-top">
+   <div class="container">
+      <div class="row gy-4">
+         <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+               <img src="assets/img/karangtengah.png" alt="">
 
-                  </a>
-                  <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                     valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-                  <div class="social-links mt-3">
-                     <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                     <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                     <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-
-                  </div>
-               </div>
-
-               <div class="col-lg-2 col-6 footer-links">
-                  <h4>Kontak Kami</h4>
-                  <p>
-                     A108 Adam Street <br>
-                     New York, NY 535022<br>
-                     United States <br><br>
-                     <strong>Phone:</strong> +1 5589 55488 55<br>
-                     <strong>Email:</strong> info@example.com<br>
-                  </p>
-               </div>
-
-               <div class="col-lg-5 col-md-12 footer-links">
-                  <h4>Lokasi Google Maps Desa</h4>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63315.911774581575!2d109.12677444999998!3d-7.326413549999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f8a4e4942c393%3A0xfb1656ebb45cb522!2sKarangtengah%2C%20Cilongok%2C%20Banyumas%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1651820938369!5m2!1sen!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
-               </div>
+            </a>
+            <p>Desa KarangTengah adalah desa di Kecamatan Cilongok, Banyumas, Jawa Tengah, yang terletak kurang lebih 15 Kilometer ke arah barat dari Purwokerto.
+               Desa KarangTengah memiliki 7 dusun atau RW, yaitu Karang Tengan, Lebaksiu, Karanganyar, Cirongge, Menggala, Karang Nangka, Semingkir yang memiliki luas wilayah 9.3427 km², dengan jumlah penduduk sebanyak 9375 jiwa.
+               Desa ini memiliki kawasan wisata yang cukup terkenal yaitu wanawisata Curug Cipendok, dengan ketinggian curug 92 meter, langsung dibawah kawasan hutan Gunung Slamet.
+            </p>
+            <div class="social-links mt-3">
+               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
 
             </div>
          </div>
-      </div>
 
-
-      <div class="container">
-         <div class="copyright">
-            &copy; Copyright <strong><span>Pemerintah Desa Karangtengah</span></strong>. All Rights Reserved
+         <div class="col-lg-2 col-6 footer-links">
+            <h4>Kontak Kami</h4>
+            <p>
+               Desa Karang Tengah <br>
+               Kecamatan Cilongok<br>
+               Kabupaten Banyumas, Jawa Tengah<br><br>
+               <strong>Phone: 081287756542</strong> <br>
+               <strong>Email:</strong>karangtengahdesawisata@gmail.com<br>
+            </p>
          </div>
+
+         <div class="col-lg-5 col-md-12 footer-links">
+            <h4>Lokasi Google Maps Desa</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63315.911774581575!2d109.12677444999998!3d-7.326413549999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f8a4e4942c393%3A0xfb1656ebb45cb522!2sKarangtengah%2C%20Cilongok%2C%20Banyumas%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1651820938369!5m2!1sen!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+
       </div>
-   </footer><!-- End Footer -->
+   </div>
+</div>
+
+<div class="container">
+   <div class="copyright">
+      &copy; Copyright <strong><span>Pemerintah Desa Karangtengah</span></strong>. All Rights Reserved
+   </div>
+</div>
+</footer><!-- End Footer -->
 
    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
    <script src="/website-desawisata-karangtengah/public/js/main.js"></script>
