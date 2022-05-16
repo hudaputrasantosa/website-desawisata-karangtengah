@@ -50,6 +50,7 @@
    <main id="main">
       <div class="container">
          <div class="row">
+
             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                <div class="carousel-indicators">
                   <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -58,41 +59,35 @@
                </div>
                <div class="carousel-inner">
                   <div class="carousel-item active">
-                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#777" />
-                     </svg>
-
+                     <div class="overlay-image">
+                        <img src="/website-desawisata-karangtengah/public/assets/img/wisata/wisata-1.jpg" class="d-block w-100" alt="...">
+                     </div>
                      <div class="container">
-                        <div class="carousel-caption text-start">
-                           <h1>Example headline.</h1>
-                           <p>Some representative placeholder content for the first slide of the carousel.</p>
-                           <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+
+                        <div class="carousel-caption">
+                           <h1>Curug Cipendok</h1>
+                           <p>Kecamatan Cilongok, Kabupaten Banyumas, Provinsi Jawa Tengah, Indonesia</p>
+
                         </div>
                      </div>
                   </div>
                   <div class="carousel-item">
-                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#777" />
-                     </svg>
-
+                     <img src="assets/img/banner/Banner2..jpg " class="d-block w-100" alt=" ">
                      <div class="container">
                         <div class="carousel-caption">
-                           <h1>Another example headline.</h1>
+                           <h1>Banner Desa</h1>
                            <p>Some representative placeholder content for the second slide of the carousel.</p>
-                           <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+
                         </div>
                      </div>
                   </div>
                   <div class="carousel-item">
-                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#777" />
-                     </svg>
-
+                     <img src="assets/img/banner/Banner3..jpg" class="d-block w-100" alt="">
                      <div class="container">
-                        <div class="carousel-caption text-end">
-                           <h1>One more for good measure.</h1>
-                           <p>Some representative placeholder content for the third slide of this carousel.</p>
-                           <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        <div class="carousel-caption">
+                           <h1>Banner Desa</h1>
+                           <p>Some representative placeholder content for the second slide of the carousel.</p>
+
                         </div>
                      </div>
                   </div>
@@ -120,7 +115,7 @@
                            <div class="row">
                               <div class="col-md-5 mb-5">
                                  <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
-                                    <img src="/website-desawisata-karangtengah/public/assets/img/wisata/wisata1.jpg" class="img-fluid" />
+                                    <img src="/website-desawisata-karangtengah/public/assets/img/wisata/wisata-1.jpg" class="img-fluid" />
                                     <a href="#!">
                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                                     </a>
@@ -128,10 +123,30 @@
                               </div>
 
                               <div class="col-md-7 mb-4">
-                                 <h5>Curug Cipendok</h5>
+                                 <h4 style="font-weight: bold;">Curug Cipendok</h4>
                                  <p>
-                                 Curug Cipendok merupakan air terjun yang terletak di Desa Karangtengah, Kecamatan Cilongok, Kabupaten Banyumas. 
-                                 Memilikki ketinggian 92 meter dan kedalaman 20 meter, dengan lingkungan yang masih alami dan hawa yang sejuk membuat jiwa dan pikiran terasa damai ketika mengunjungi nya.
+                                    Curug Cipendok merupakan air terjun yang terletak di Desa Karangtengah, Kecamatan Cilongok, Kabupaten Banyumas.
+                                    Memilikki ketinggian 92 meter dan kedalaman 20 meter, dengan lingkungan yang masih alami dan hawa yang sejuk membuat jiwa dan pikiran terasa damai ketika mengunjungi nya.
+                                 </p>
+
+                                 <a href="/website-desawisata-karangtengah/public/home/detail_wisata" type="button" class="btn-hijau">Lihat Selengkapnya</a>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-5 mb-5">
+                                 <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
+                                    <img src="/website-desawisata-karangtengah/public/assets/img/wisata/wisata-2.jpg" class="img-fluid" />
+                                    <a href="#!">
+                                       <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                    </a>
+                                 </div>
+                              </div>
+
+                              <div class="col-md-7 mb-4">
+                                 <h4 style="font-weight: bold;">Curug Cipendok</h4>
+                                 <p>
+                                    Curug Cipendok merupakan air terjun yang terletak di Desa Karangtengah, Kecamatan Cilongok, Kabupaten Banyumas.
+                                    Memilikki ketinggian 92 meter dan kedalaman 20 meter, dengan lingkungan yang masih alami dan hawa yang sejuk membuat jiwa dan pikiran terasa damai ketika mengunjungi nya.
                                  </p>
 
                                  <a href="/website-desawisata-karangtengah/public/home/detail_wisata" type="button" class="btn-hijau">Lihat Selengkapnya</a>
@@ -151,60 +166,55 @@
    </main>
 
 
-     <!-- ======= Bagian Footer ======= -->
-     <footer class="footer">
+   <!-- ======= Bagian Footer ======= -->
+   <footer class="footer">
+      <div class="footer-top">
+         <div class="container">
+            <div class="row gy-4">
+               <div class="col-lg-3 col-md-12 footer-info">
+                  <div class="logo d-flex align-items-center">
+                     <img src="/website-desawisata-karangtengah/public/assets/img/desa-karangtengah-3.png" alt="">
+                  </div>
+                  <p>Desa KarangTengah adalah desa di Kecamatan Cilongok, Banyumas, Jawa Tengah, yang terletak kurang lebih 15 Kilometer ke arah barat dari Purwokerto.
+                  </p>
+               </div>
 
-<div class="footer-top">
-   <div class="container">
-      <div class="row gy-4">
-         <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
-               <img src="assets/img/karangtengah.png" alt="">
+               <div class="col-lg-4 col-md-12 footer-links">
+                  <h4>Kontak Kami</h4>
+                  <p>
+                     Desa Karangtengah
+                     Kecamatan Cilongok<br>
+                     Kabupaten Banyumas, Jawa Tengah<br>
+                     <strong>Phone</strong>: 081287756542 <br>
+                     <strong>Email</strong>: karangtengahdesawisata@gmail.com<br>
+                  </p>
+                  <div class="social-links mt-3">
+                     <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                     <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                     <a href="https://www.instagram.com/desawisata_karangtengah/" class="instagram"><i class="bi bi-instagram"></i></a>
+                  </div>
+               </div>
 
-            </a>
-            <p>Desa KarangTengah adalah desa di Kecamatan Cilongok, Banyumas, Jawa Tengah, yang terletak kurang lebih 15 Kilometer ke arah barat dari Purwokerto.
-               Desa KarangTengah memiliki 7 dusun atau RW, yaitu Karang Tengan, Lebaksiu, Karanganyar, Cirongge, Menggala, Karang Nangka, Semingkir yang memiliki luas wilayah 9.3427 km², dengan jumlah penduduk sebanyak 9375 jiwa.
-               Desa ini memiliki kawasan wisata yang cukup terkenal yaitu wanawisata Curug Cipendok, dengan ketinggian curug 92 meter, langsung dibawah kawasan hutan Gunung Slamet.
-            </p>
-            <div class="social-links mt-3">
-               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+               <div class="col-lg-5 col-md-12 footer-links">
+                  <h4>Lokasi Google Maps Desa</h4>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63315.911774581575!2d109.12677444999998!3d-7.326413549999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f8a4e4942c393%3A0xfb1656ebb45cb522!2sKarangtengah%2C%20Cilongok%2C%20Banyumas%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1651820938369!5m2!1sen!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
 
             </div>
          </div>
-
-         <div class="col-lg-2 col-6 footer-links">
-            <h4>Kontak Kami</h4>
-            <p>
-               Desa Karang Tengah <br>
-               Kecamatan Cilongok<br>
-               Kabupaten Banyumas, Jawa Tengah<br><br>
-               <strong>Phone: 081287756542</strong> <br>
-               <strong>Email:</strong>karangtengahdesawisata@gmail.com<br>
-            </p>
-         </div>
-
-         <div class="col-lg-5 col-md-12 footer-links">
-            <h4>Lokasi Google Maps Desa</h4>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63315.911774581575!2d109.12677444999998!3d-7.326413549999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f8a4e4942c393%3A0xfb1656ebb45cb522!2sKarangtengah%2C%20Cilongok%2C%20Banyumas%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1651820938369!5m2!1sen!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
-         </div>
-
       </div>
-   </div>
-</div>
 
-<div class="container">
-   <div class="copyright">
-      &copy; Copyright <strong><span>Pemerintah Desa Karangtengah</span></strong>. All Rights Reserved
-   </div>
-</div>
-</footer><!-- End Footer -->
+      <div class="container">
+         <div class="copyright">
+            &copy; Copyright <strong><span>Pemerintah Desa Karangtengah</span></strong>. All Rights Reserved
+         </div>
+      </div>
+   </footer><!-- End Footer -->
 
    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-   <script src="/desain-pemrograman-web/website-desawisata-karangtengah/public/js/main.js"></script>
-   <script type="text/javascript" src="/desain-pemrograman-web/website-desawisata-karangtengah/public/js/mdb.min.js"></script>
-   <script type="text/javascript" src="/desain-pemrograman-web/website-desawisata-karangtengah/public/js/script.js"></script>
+   <script src="/website-desawisata-karangtengah/public/js/main.js"></script>
+   <script type="text/javascript" src="/website-desawisata-karangtengah/public/js/mdb.min.js"></script>
+   <script type="text/javascript" src="/website-desawisata-karangtengah/public/js/script.js"></script>
 </body>
 
 </html>
