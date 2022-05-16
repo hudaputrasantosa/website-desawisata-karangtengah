@@ -114,8 +114,8 @@
                      <div class="col">
                         <div class="card shadow-sm">
                            <img src="/website-desawisata-karangtengah/public/assets/img/produkdesa/industritahu.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                              <title>Placeholder</title>
-                              <rect width="100%" height="100%" fill="#55595c" />
+                           <title>Placeholder</title>
+                           <rect width="100%" height="100%" fill="#55595c" />
                            </img>
                            <div class="card-body">
                               <h5>Industri Tahu</h5>
@@ -131,8 +131,8 @@
                      <div class="col">
                         <div class="card shadow-sm">
                            <img src="/website-desawisata-karangtengah/public/assets/img/produkdesa/gulakelapa.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                              <title>Placeholder</title>
-                              <rect width="100%" height="100%" fill="#55595c" />
+                           <title>Placeholder</title>
+                           <rect width="100%" height="100%" fill="#55595c" />
                            </img>
                            <div class="card-body">
                               <h5>Gula Kelapa</h5>
@@ -172,55 +172,55 @@
    </main>
 
 
-    <!-- ======= Bagian Footer ======= -->
-    <footer class="footer">
+   <!-- ======= Bagian Footer ======= -->
+   <footer class="footer">
 
-<div class="footer-top">
-   <div class="container">
-      <div class="row gy-4">
-         <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
-               <img src="assets/img/karangtengah.png" alt="">
+      <div class="footer-top">
+         <div class="container">
+            <div class="row gy-4">
+               <div class="col-lg-5 col-md-12 footer-info">
+                  <a href="index.html" class="logo d-flex align-items-center">
+                     <img src="assets/img/karangtengah.png" alt="">
 
-            </a>
-            <p>Desa KarangTengah adalah desa di Kecamatan Cilongok, Banyumas, Jawa Tengah, yang terletak kurang lebih 15 Kilometer ke arah barat dari Purwokerto.
-               Desa KarangTengah memiliki 7 dusun atau RW, yaitu Karang Tengan, Lebaksiu, Karanganyar, Cirongge, Menggala, Karang Nangka, Semingkir yang memiliki luas wilayah 9.3427 km², dengan jumlah penduduk sebanyak 9375 jiwa.
-               Desa ini memiliki kawasan wisata yang cukup terkenal yaitu wanawisata Curug Cipendok, dengan ketinggian curug 92 meter, langsung dibawah kawasan hutan Gunung Slamet.
-            </p>
-            <div class="social-links mt-3">
-               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                  </a>
+                  <p>Desa KarangTengah adalah desa di Kecamatan Cilongok, Banyumas, Jawa Tengah, yang terletak kurang lebih 15 Kilometer ke arah barat dari Purwokerto.
+                     Desa KarangTengah memiliki 7 dusun atau RW, yaitu Karang Tengan, Lebaksiu, Karanganyar, Cirongge, Menggala, Karang Nangka, Semingkir yang memiliki luas wilayah 9.3427 km², dengan jumlah penduduk sebanyak 9375 jiwa.
+                     Desa ini memiliki kawasan wisata yang cukup terkenal yaitu wanawisata Curug Cipendok, dengan ketinggian curug 92 meter, langsung dibawah kawasan hutan Gunung Slamet.
+                  </p>
+                  <div class="social-links mt-3">
+                     <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                     <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                     <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+
+                  </div>
+               </div>
+
+               <div class="col-lg-2 col-6 footer-links">
+                  <h4>Kontak Kami</h4>
+                  <p>
+                     Desa Karang Tengah <br>
+                     Kecamatan Cilongok<br>
+                     Kabupaten Banyumas, Jawa Tengah<br><br>
+                     <strong>Phone: 081287756542</strong> <br>
+                     <strong>Email:</strong>karangtengahdesawisata@gmail.com<br>
+                  </p>
+               </div>
+
+               <div class="col-lg-5 col-md-12 footer-links">
+                  <h4>Lokasi Google Maps Desa</h4>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63315.911774581575!2d109.12677444999998!3d-7.326413549999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f8a4e4942c393%3A0xfb1656ebb45cb522!2sKarangtengah%2C%20Cilongok%2C%20Banyumas%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1651820938369!5m2!1sen!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
 
             </div>
          </div>
-
-         <div class="col-lg-2 col-6 footer-links">
-            <h4>Kontak Kami</h4>
-            <p>
-               Desa Karang Tengah <br>
-               Kecamatan Cilongok<br>
-               Kabupaten Banyumas, Jawa Tengah<br><br>
-               <strong>Phone: 081287756542</strong> <br>
-               <strong>Email:</strong>karangtengahdesawisata@gmail.com<br>
-            </p>
-         </div>
-
-         <div class="col-lg-5 col-md-12 footer-links">
-            <h4>Lokasi Google Maps Desa</h4>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63315.911774581575!2d109.12677444999998!3d-7.326413549999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f8a4e4942c393%3A0xfb1656ebb45cb522!2sKarangtengah%2C%20Cilongok%2C%20Banyumas%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1651820938369!5m2!1sen!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
-         </div>
-
       </div>
-   </div>
-</div>
 
-<div class="container">
-   <div class="copyright">
-      &copy; Copyright <strong><span>Pemerintah Desa Karangtengah</span></strong>. All Rights Reserved
-   </div>
-</div>
-</footer><!-- End Footer -->
+      <div class="container">
+         <div class="copyright">
+            &copy; Copyright <strong><span>Pemerintah Desa Karangtengah</span></strong>. All Rights Reserved
+         </div>
+      </div>
+   </footer><!-- End Footer -->
 
    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
    <script src="/website-desawisata-karangtengah/public/js/main.js"></script>

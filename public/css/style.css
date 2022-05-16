@@ -2294,7 +2294,7 @@ section {
 } */
 
 .footer .footer-top .footer-info .logo img {
-  max-height: 40px;
+  max-height: 50px;
   margin-right: 6px;
 }
 
@@ -2405,6 +2405,17 @@ section {
 
 .btn-hijau:hover {
   background-color: #018075;
+}
+
+.btn-luar {
+  background-color: #012970;
+  padding: 5px 14px 5px 14px;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  border-radius: 5px;
+  border: 1pxv#01a396;
+  color: #01a396;
+  font-size: 11pt;
 }
 
 /* .fixed-top {
