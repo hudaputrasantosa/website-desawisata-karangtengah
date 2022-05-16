@@ -19,7 +19,7 @@
    <header id="header" class="header fixed-top">
       <div class="container container-xl d-flex align-items-center justify-content-between">
          <a href="/website-desawisata-karangtengah/public/home" class="logo align-items-center">
-            <img src="/website-desawisata-karangtengah/public/assets/img/karangtengah.png" alt="">
+            <img src="/website-desawisata-karangtengah/public/assets/img/desa-karangtengah-2.png" alt="">
          </a>
          <!-- =======  Bagian Navigasi ======= -->
          <nav id="navbar" class="navbar">
@@ -59,7 +59,9 @@
                </div>
                <div class="carousel-inner">
                   <div class="carousel-item active">
-                     <img src="assets/img/banner/Banner1..jpg" class="d-block w-100" alt="...">
+                     <div class="overlay-image">
+                        <img src="assets/img/banner/Banner1..jpg" class="d-block w-100" alt="...">
+                     </div>
                      <div class="container">
 
                         <div class="carousel-caption">
@@ -103,15 +105,15 @@
       </div>
 
       <!--Main layout-->
-      <main class="my-5">
+      <main>
          <div class="container">
             <!--Grid row-->
             <div class="row">
                <!--Grid column-->
-               <div class="col-md-9 mb-4">
+               <div class="col-md-10">
                   <!--Section: Content-->
                   <section>
-                     <h3>Berita Terkini</h3><br>
+                     <h3 style="font-weight: bold;">Berita Terkini</h3><br>
                      <!-- Post -->
                      <div class="row">
                         <div class="col-md-4 mb-4">
@@ -126,10 +128,10 @@
                         <div class="col-md-8 mb-4">
                            <h5>Kemitraan Mahasiswa ITTP dengan Desa Karangtengah</h5>
                            <p class="mb-2">
-                          Sebanyak 4 mahasiswa prodi S1 Software Engineering Melaksanakan Kegiatan Kemitraan
-                          Dengan desa wisata Karangtengah Kab Cilongok. Kemitraan ini untuk memenuhi project 
-                          tugas akhir, dengan mengembangkan sebuah perangkat lunak yaitu website desa wisata
-                          sebagai media informasi dan promosi. 
+                              Sebanyak 4 mahasiswa prodi S1 Software Engineering Melaksanakan Kegiatan Kemitraan
+                              Dengan desa wisata Karangtengah Kab Cilongok. Kemitraan ini untuk memenuhi project
+                              tugas akhir, dengan mengembangkan sebuah perangkat lunak yaitu website desa wisata
+                              sebagai media informasi dan promosi.
                            </p>
                            <button type="button" class="btn-hijau">Baca Selengkapnya</button>
                         </div>
@@ -139,7 +141,7 @@
                      <div class="row">
                         <div class="col-md-4 mb-4">
                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
-                           <img src="/website-desawisata-karangtengah/public/assets/img/beritaterkini/berita1.jpg" class="img-fluid" />
+                              <img src="/website-desawisata-karangtengah/public/assets/img/beritaterkini/berita1.jpg" class="img-fluid" />
                               <a href="#!">
                                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                               </a>
@@ -149,24 +151,22 @@
                         <div class="col-md-8 mb-4">
                            <h5>Kemitraan Mahasiswa ITTP dengan Desa Karangtengah</h5>
                            <p class="mb-2">
-                           Sebanyak 4 mahasiswa prodi S1 Software Engineering Melaksanakan Kegiatan Kemitraan
-                          Dengan desa wisata Karangtengah Kab Cilongok. Kemitraan ini untuk memenuhi project 
-                          tugas akhir, dengan mengembangkan sebuah perangkat lunak 
-                          yaitu website desa wisata sebagai media informasi dan promosi. 
+                              Sebanyak 4 mahasiswa prodi S1 Software Engineering Melaksanakan Kegiatan Kemitraan
+                              Dengan desa wisata Karangtengah Kab Cilongok. Kemitraan ini untuk memenuhi project
+                              tugas akhir, dengan mengembangkan sebuah perangkat lunak
+                              yaitu website desa wisata sebagai media informasi dan promosi.
                            </p>
                            <button type="button" class="btn-hijau">Baca Selengkapnya</button>
                         </div>
                      </div>
-
-                  </section>
+                     <div class="pt-3 text-center">
+                        <button class="btn-outline">Lihat Selengkapnya</button>
+                     </div>
                </div>
 
-
-
-
             </div>
-            <button type="button" class="btn btn-outline-primary">Lihat Selengkapnya</button>
-            <!--Grid row-->
+         </div>
+         <!--Grid row-->
          </div>
       </main>
       <!--Main layout-->
@@ -302,36 +302,31 @@
 
    <!-- ======= Bagian Footer ======= -->
    <footer class="footer">
-
       <div class="footer-top">
          <div class="container">
             <div class="row gy-4">
-               <div class="col-lg-5 col-md-12 footer-info">
-                  <a href="index.html" class="logo d-flex align-items-center">
-                     <img src="assets/img/karangtengah.png" alt="">
-
-                  </a>
+               <div class="col-lg-3 col-md-12 footer-info">
+                  <div class="logo d-flex align-items-center">
+                     <img src="assets/img/desa-karangtengah-3.png" alt="">
+                  </div>
                   <p>Desa KarangTengah adalah desa di Kecamatan Cilongok, Banyumas, Jawa Tengah, yang terletak kurang lebih 15 Kilometer ke arah barat dari Purwokerto.
-                     Desa KarangTengah memiliki 7 dusun atau RW, yaitu Karang Tengan, Lebaksiu, Karanganyar, Cirongge, Menggala, Karang Nangka, Semingkir yang memiliki luas wilayah 9.3427 km², dengan jumlah penduduk sebanyak 9375 jiwa.
-                     Desa ini memiliki kawasan wisata yang cukup terkenal yaitu wanawisata Curug Cipendok, dengan ketinggian curug 92 meter, langsung dibawah kawasan hutan Gunung Slamet.
+                  </p>
+               </div>
+
+               <div class="col-lg-4 col-md-12 footer-links">
+                  <h4>Kontak Kami</h4>
+                  <p>
+                     Desa Karangtengah
+                     Kecamatan Cilongok<br>
+                     Kabupaten Banyumas, Jawa Tengah<br>
+                     <strong>Phone</strong>: 081287756542 <br>
+                     <strong>Email</strong>: karangtengahdesawisata@gmail.com<br>
                   </p>
                   <div class="social-links mt-3">
                      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                     <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-
+                     <a href="https://www.instagram.com/desawisata_karangtengah/" class="instagram"><i class="bi bi-instagram"></i></a>
                   </div>
-               </div>
-
-               <div class="col-lg-2 col-6 footer-links">
-                  <h4>Kontak Kami</h4>
-                  <p>
-                     Desa Karang Tengah <br>
-                     Kecamatan Cilongok<br>
-                     Kabupaten Banyumas, Jawa Tengah<br><br>
-                     <strong>Phone: 081287756542</strong> <br>
-                     <strong>Email:</strong>karangtengahdesawisata@gmail.com<br>
-                  </p>
                </div>
 
                <div class="col-lg-5 col-md-12 footer-links">
