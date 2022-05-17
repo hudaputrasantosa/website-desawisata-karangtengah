@@ -19,7 +19,7 @@
    <header id="header" class="header fixed-top">
       <div class="container container-xl d-flex align-items-center justify-content-between">
          <a href="/website-desawisata-karangtengah/public/home" class="logo align-items-center">
-            <img src="/website-desawisata-karangtengah/public/assets/img/karangtengah.png" alt="">
+            <img src="/website-desawisata-karangtengah/public/assets/img/desa-karangtengah-2.png" alt="">
          </a>
          <!-- =======  Bagian Navigasi ======= -->
          <nav id="navbar" class="navbar">
