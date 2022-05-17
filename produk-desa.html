@@ -6,11 +6,23 @@
    <meta content="width=device-width, initial-scale=1.0" name="viewport">
    <title>Desa Karangtengah</title>
    <link href="assets/img/favicon.png" rel="icon">
-   <link href="/website-desawisata-karangtengah/public/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-   <link href="/website-desawisata-karangtengah/public/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-   <link href="/website-desawisata-karangtengah/public/css/carousel.css" rel="stylesheet">
-   <link href="/website-desawisata-karangtengah/public/css/mdb.min.css" rel="stylesheet">
-   <link href="/website-desawisata-karangtengah/public/css/style.css" rel="stylesheet">
+
+   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+   <link href="css/carousel.css" rel="stylesheet">
+   <link href="css/mdb.min.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -18,22 +30,22 @@
    <!-- =======  Bagian Header ======= -->
    <header id="header" class="header fixed-top">
       <div class="container container-xl d-flex align-items-center justify-content-between">
-         <a href="/website-desawisata-karangtengah/public/home" class="logo align-items-center">
-            <img src="/website-desawisata-karangtengah/public/assets/img/karangtengah.png" alt="">
+         <a href="/index.html" class="logo align-items-center">
+            <img src="assets/img/desa-karangtengah-2.png" alt="">
          </a>
          <!-- =======  Bagian Navigasi ======= -->
          <nav id="navbar" class="navbar">
             <ul>
-               <li><a class="nav-link" href="/website-desawisata-karangtengah/public/home">Beranda</a></li>
+               <li><a class="nav-link" href="index.html">Beranda</a></li>
                <li class="dropdown"><a href=""><span>Profil Desa</span> <i class="bi bi-chevron-down"></i></a>
                   <ul>
-                     <li><a href="/website-desawisata-karangtengah/public/home/visimisi">Visi dan Misi</a></li>
-                     <li><a href="/website-desawisata-karangtengah/public/home/sejarah">Sejarah Desa</a></li>
+                     <li><a href="index.html" visimisi">Visi dan Misi</a></li>
+                     <li><a href="sejarah.html">Sejarah Desa</a></li>
                   </ul>
                </li>
-               <li><a class="nav-link" href="/website-desawisata-karangtengah/public/home/berita">Berita Desa</a></li>
-               <li><a class="nav-link" href="/website-desawisata-karangtengah/public/home/wisata">Wisata</a></li>
-               <li><a class="nav-link" href="/website-desawisata-karangtengah/public/home/produk">Produk Desa</a></li>
+               <li><a class="nav-link" href="berita-desa.html">Berita Desa</a></li>
+               <li><a class="nav-link" href="wisata-desa.html">Wisata</a></li>
+               <li><a class="nav-link" href="produk-desa.html">Produk Desa</a></li>
                <li>
                   <a>
                      <div class="input-group">
@@ -46,10 +58,12 @@
          </nav>
       </div>
    </header>
+   <!-- akhir dari header -->
 
    <main id="main">
       <div class="container">
          <div class="row">
+
             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                <div class="carousel-indicators">
                   <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -58,53 +72,40 @@
                </div>
                <div class="carousel-inner">
                   <div class="carousel-item active">
-                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#777" />
-                     </svg>
-
+                     <div class="overlay-image">
+                        <img src="assets/img/produkdesa/gulakelapa.jpg" class="d-block w-100" alt="...">
+                     </div>
                      <div class="container">
-                        <div class="carousel-caption text-start">
-                           <h1>Example headline.</h1>
-                           <p>Some representative placeholder content for the first slide of the carousel.</p>
-                           <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+
+                        <div class="carousel-caption">
+                           <h2>Produk Desa</h2>
+                           <p>Kecamatan Cilongok, Kabupaten Banyumas, Provinsi Jawa Tengah, Indonesia</p>
+
                         </div>
                      </div>
                   </div>
                   <div class="carousel-item">
-                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#777" />
-                     </svg>
-
+                     <img src="assets/img/produkdesa/gulakelapa.jpg " class="d-block w-100" alt=" ">
                      <div class="container">
                         <div class="carousel-caption">
-                           <h1>Another example headline.</h1>
+                           <h1>Banner Desa</h1>
                            <p>Some representative placeholder content for the second slide of the carousel.</p>
-                           <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+
                         </div>
                      </div>
                   </div>
                   <div class="carousel-item">
-                     <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#777" />
-                     </svg>
-
+                     <img src="assets/img/banner/Banner3..jpg" class="d-block w-100" alt="">
                      <div class="container">
-                        <div class="carousel-caption text-end">
-                           <h1>One more for good measure.</h1>
-                           <p>Some representative placeholder content for the third slide of this carousel.</p>
-                           <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        <div class="carousel-caption">
+                           <h1>Banner Desa</h1>
+                           <p>Some representative placeholder content for the second slide of the carousel.</p>
+
                         </div>
                      </div>
                   </div>
                </div>
-               <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-               </button>
-               <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-               </button>
+
             </div>
 
             <div class="album py-5 bg-light">
@@ -113,7 +114,7 @@
                   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                      <div class="col">
                         <div class="card shadow-sm">
-                           <img src="/website-desawisata-karangtengah/public/assets/img/produkdesa/industritahu.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                           <img src="assets/img/produkdesa/industritahu.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                            <title>Placeholder</title>
                            <rect width="100%" height="100%" fill="#55595c" />
                            </img>
@@ -130,7 +131,7 @@
                      </div>
                      <div class="col">
                         <div class="card shadow-sm">
-                           <img src="/website-desawisata-karangtengah/public/assets/img/produkdesa/gulakelapa.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                           <img src="assets/img/produkdesa/gulakelapa.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                            <title>Placeholder</title>
                            <rect width="100%" height="100%" fill="#55595c" />
                            </img>
@@ -147,7 +148,7 @@
                      </div>
                      <div class="col">
                         <div class="card shadow-sm">
-                           <img src="/website-desawisata-karangtengah/public/assets/img/produkdesa/tehhijau.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                           <img src="assets/img/produkdesa/tehhijau.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
                            <title>Placeholder</title>
                            <rect width="100%" height="100%" fill="#55595c" />
                            </img>
@@ -174,36 +175,31 @@
 
    <!-- ======= Bagian Footer ======= -->
    <footer class="footer">
-
       <div class="footer-top">
          <div class="container">
             <div class="row gy-4">
-               <div class="col-lg-5 col-md-12 footer-info">
-                  <a href="index.html" class="logo d-flex align-items-center">
-                     <img src="assets/img/karangtengah.png" alt="">
-
-                  </a>
+               <div class="col-lg-3 col-md-12 footer-info">
+                  <div class="logo d-flex align-items-center">
+                     <img src="assets/img/desa-karangtengah-3.png" alt="">
+                  </div>
                   <p>Desa KarangTengah adalah desa di Kecamatan Cilongok, Banyumas, Jawa Tengah, yang terletak kurang lebih 15 Kilometer ke arah barat dari Purwokerto.
-                     Desa KarangTengah memiliki 7 dusun atau RW, yaitu Karang Tengan, Lebaksiu, Karanganyar, Cirongge, Menggala, Karang Nangka, Semingkir yang memiliki luas wilayah 9.3427 km², dengan jumlah penduduk sebanyak 9375 jiwa.
-                     Desa ini memiliki kawasan wisata yang cukup terkenal yaitu wanawisata Curug Cipendok, dengan ketinggian curug 92 meter, langsung dibawah kawasan hutan Gunung Slamet.
+                  </p>
+               </div>
+
+               <div class="col-lg-4 col-md-12 footer-links">
+                  <h4>Kontak Kami</h4>
+                  <p>
+                     Desa Karangtengah
+                     Kecamatan Cilongok<br>
+                     Kabupaten Banyumas, Jawa Tengah<br>
+                     <strong>Phone</strong>: 081287756542 <br>
+                     <strong>Email</strong>: karangtengahdesawisata@gmail.com<br>
                   </p>
                   <div class="social-links mt-3">
                      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                     <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-
+                     <a href="https://www.instagram.com/desawisata_karangtengah/" class="instagram"><i class="bi bi-instagram"></i></a>
                   </div>
-               </div>
-
-               <div class="col-lg-2 col-6 footer-links">
-                  <h4>Kontak Kami</h4>
-                  <p>
-                     Desa Karang Tengah <br>
-                     Kecamatan Cilongok<br>
-                     Kabupaten Banyumas, Jawa Tengah<br><br>
-                     <strong>Phone: 081287756542</strong> <br>
-                     <strong>Email:</strong>karangtengahdesawisata@gmail.com<br>
-                  </p>
                </div>
 
                <div class="col-lg-5 col-md-12 footer-links">
@@ -221,6 +217,7 @@
          </div>
       </div>
    </footer><!-- End Footer -->
+
 
    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
    <script src="/website-desawisata-karangtengah/public/js/main.js"></script>

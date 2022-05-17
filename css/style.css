@@ -2,6 +2,10 @@
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -2417,6 +2421,79 @@ section {
   color: #01a396;
   font-size: 11pt;
 }
+
+
+
+.slider {
+  max-width: 100%;
+  display: flex;
+}
+
+.slider .card {
+  flex: 1;
+  margin: 0 15px;
+  background: #fff;
+}
+
+.slider .card .img {
+  height: 300px;
+  width: 100%;
+}
+
+.slider .card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slider .card .content {
+  padding: 10px 20px;
+}
+
+.card .content .title {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.card .content {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.card .content .sub-title {
+  font-size: 1em;
+  font-weight: 400;
+  color: #01a396;
+  line-height: 20px;
+}
+
+.card .content p {
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.card .content .btn {
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.card .content .btn button {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card .content .btn button:hover {
+  transform: scale(0.9);
+}
+
 
 /* .fixed-top {
   background-color: #fff !important;
