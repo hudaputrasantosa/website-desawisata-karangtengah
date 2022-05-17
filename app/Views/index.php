@@ -6,11 +6,18 @@
    <meta content="width=device-width, initial-scale=1.0" name="viewport">
    <title>Desa Karangtengah</title>
    <link href="assets/img/favicon.png" rel="icon">
+
    <link href="/website-desawisata-karangtengah/public/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <link href="/website-desawisata-karangtengah/public/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
    <link href="/website-desawisata-karangtengah/public/css/carousel.css" rel="stylesheet">
    <link href="/website-desawisata-karangtengah/public/css/mdb.min.css" rel="stylesheet">
    <link href="/website-desawisata-karangtengah/public/css/style.css" rel="stylesheet">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -92,14 +99,7 @@
                      </div>
                   </div>
                </div>
-               <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-               </button>
-               <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-               </button>
+
             </div>
          </div>
       </div>
@@ -160,7 +160,7 @@
                         </div>
                      </div>
                      <div class="pt-3 text-center">
-                        <button class="btn-outline">Lihat Selengkapnya</button>
+                        <a href="/website-desawisata-karangtengah/public/home/berita" class="btn-outline">Lihat Berita Selengkapnya..</a>
                      </div>
                </div>
 
@@ -172,131 +172,62 @@
       <!--Main layout-->
 
 
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-         <div class="container">
-            <div class="row gx-0">
+      <div class="container mb-4">
+         <h3 style="font-weight: bold;">Pengurus Desa</h3><br>
+         <div class="row gy-4">
+            <div class="owl-carousel owl-theme">
 
-               <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+               <div class="card">
+                  <div class="img"><img src="/website-desawisata-karangtengah/public/assets/img/pengurus/pengurus-1.jpg" alt=""></div>
                   <div class="content">
-                     <h3>Who We Are</h3>
-                     <h2>Expedita voluptas omnis cupiditate totam eveniet nobis sint iste. Dolores est repellat corrupti
-                        reprehenderit.</h2>
-                     <p>
-                        Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor
-                        consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est
-                        corrupti.
-                     </p>
-                     <div class="text-center text-lg-start">
-                        <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                           <span>Read More</span>
-                           <i class="bi bi-arrow-right"></i>
-                        </a>
-                     </div>
+                     <div class="title">Huda Putra Santosa</div>
+                     <div class="sub-title pb-5">Kepala Desa</div>
+
                   </div>
                </div>
+               <div class="card">
+                  <div class="img"><img src="/website-desawisata-karangtengah/public/assets/img/pengurus/pengurus-1.jpg" alt=""></div>
+                  <div class="content">
+                     <div class="title">Huda Putra Santosa</div>
+                     <div class="sub-title pb-5">Sekretaris Desa</div>
 
-               <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-                  <img src="assets/img/about.jpg" class="img-fluid" alt="">
+                  </div>
                </div>
+               <div class="card">
+                  <div class="img"><img src="/website-desawisata-karangtengah/public/assets/img/pengurus/pengurus-1.jpg" alt=""></div>
+                  <div class="content">
+                     <div class="title">Huda Putra Santosa</div>
+                     <div class="sub-title pb-5">Kasi Pemeriksaan</div>
 
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="img"><img src="/website-desawisata-karangtengah/public/assets/img/pengurus/pengurus-1.jpg" alt=""></div>
+                  <div class="content">
+                     <div class="title">Huda Putra Santosa</div>
+                     <div class="sub-title pb-5">Kasi Pelayanan</div>
+
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="img"><img src="/website-desawisata-karangtengah/public/assets/img/pengurus/pengurus-1.jpg" alt=""></div>
+                  <div class="content">
+                     <div class="title">Huda Putra Santosa</div>
+                     <div class="sub-title pb-5">Kasi Kesejahteraan</div>
+
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="img"><img src="/website-desawisata-karangtengah/public/assets/img/pengurus/pengurus-1.jpg" alt=""></div>
+                  <div class="content">
+                     <div class="title">Huda Putra Santosa</div>
+                     <div class="sub-title pb-5">Kasi Keuangan</div>
+
+                  </div>
+               </div>
             </div>
          </div>
-
-      </section><!-- End About Section -->
-
-      <!-- ======= Values Section ======= -->
-      <section id="values" class="values">
-
-         <div class="container" data-aos="fade-up">
-
-            <header class="section-header">
-               <h2>Our Values</h2>
-               <p>Odit est perspiciatis laborum et dicta</p>
-            </header>
-
-            <div class="row">
-
-               <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                  <div class="box">
-                     <img src="assets/img/values-1.png" class="img-fluid" alt="">
-                     <h3>Ad cupiditate sed est odio</h3>
-                     <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
-                  </div>
-               </div>
-
-               <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-                  <div class="box">
-                     <img src="assets/img/values-2.png" class="img-fluid" alt="">
-                     <h3>Voluptatem voluptatum alias</h3>
-                     <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
-                  </div>
-               </div>
-
-               <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
-                  <div class="box">
-                     <img src="assets/img/values-3.png" class="img-fluid" alt="">
-                     <h3>Fugit cupiditate alias nobis.</h3>
-                     <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
-                  </div>
-               </div>
-
-            </div>
-
-         </div>
-
-      </section><!-- End Values Section -->
-
-      <!-- ======= Counts Section ======= -->
-      <section id="counts" class="counts">
-         <div class="container" data-aos="fade-up">
-
-            <div class="row gy-4">
-
-               <div class="col-lg-3 col-md-6">
-                  <div class="count-box">
-                     <i class="bi bi-emoji-smile"></i>
-                     <div>
-                        <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>Happy Clients</p>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col-lg-3 col-md-6">
-                  <div class="count-box">
-                     <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
-                     <div>
-                        <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>Projects</p>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col-lg-3 col-md-6">
-                  <div class="count-box">
-                     <i class="bi bi-headset" style="color: #15be56;"></i>
-                     <div>
-                        <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>Hours Of Support</p>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col-lg-3 col-md-6">
-                  <div class="count-box">
-                     <i class="bi bi-people" style="color: #bb0852;"></i>
-                     <div>
-                        <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>Hard Workers</p>
-                     </div>
-                  </div>
-               </div>
-
-            </div>
-
-         </div>
-      </section><!-- End Counts Section -->
+      </div>
 
    </main><!-- End #main -->
 
@@ -346,8 +277,32 @@
    </footer><!-- End Footer -->
 
    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-   <script src="../public/js/main.js"></script>
-   <script type="text/javascript" src="../public/js/mdb.min.js"></script>
+   <script src="/website-desawisata-karangtengah/public/js/main.js"></script>
+   <script src="/website-desawisata-karangtengah/public/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script type="text/javascript" src="/website-desawisata-karangtengah/public/js/mdb.min.js"></script>
+
+   <script>
+      $('.owl-carousel').owlCarousel({
+         loop: true,
+         margin: 10,
+         autoplay: true,
+         autoplayTimeout: 3000,
+         responsiveClass: true,
+         responsive: {
+            0: {
+               items: 1,
+
+            },
+            600: {
+               items: 3,
+
+            },
+            1000: {
+               items: 5,
+            }
+         }
+      })
+   </script>
 
 </body>
 

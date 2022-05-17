@@ -19,7 +19,7 @@
    <header id="header" class="header fixed-top">
       <div class="container container-xl d-flex align-items-center justify-content-between">
          <a href="/website-desawisata-karangtengah/public/home" class="logo align-items-center">
-            <img src="/website-desawisata-karangtengah/public/assets/img/karangtengah.png" alt="">
+            <img src="/website-desawisata-karangtengah/public/assets/img/desa-karangtengah-2.png" alt="">
          </a>
          <!-- =======  Bagian Navigasi ======= -->
          <nav id="navbar" class="navbar">
@@ -50,11 +50,11 @@
    <div class="container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="/desain-pemrograman-web/website-desawisata-karangtengah/public/assets/img/portfolio/portfolio-1.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            <img src="/website-desawisata-karangtengah/public/assets/img/banner/Banner1..jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
          </div>
          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
-            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <h1 class="display-6 fw-bold mt-5 lh-1 mb-3">Desa Karangtengah</h1>
+            <p class="lead">Desa KarangTengah adalah desa di Kecamatan Cilongok, Banyumas, Jawa Tengah, yang terletak kurang lebih 15 Kilometer ke arah barat dari Purwokerto. extensive prebuilt components, and powerful JavaScript plugins.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
@@ -64,35 +64,33 @@
    </div>
 
 
+   <!-- ======= Bagian Footer ======= -->
    <footer class="footer">
-
       <div class="footer-top">
          <div class="container">
             <div class="row gy-4">
-               <div class="col-lg-5 col-md-12 footer-info">
-                  <a href="index.html" class="logo d-flex align-items-center">
-                     <img src="/desain-pemrograman-web/website-desawisata-karangtengah/public/assets/img/karangtengah.png" alt="">
+               <div class="col-lg-3 col-md-12 footer-info">
+                  <div class="logo d-flex align-items-center">
+                     <img src="/website-desawisata-karangtengah/public/assets/img/desa-karangtengah-3.png" alt="">
+                  </div>
+                  <p>Desa KarangTengah adalah desa di Kecamatan Cilongok, Banyumas, Jawa Tengah, yang terletak kurang lebih 15 Kilometer ke arah barat dari Purwokerto.
+                  </p>
+               </div>
 
-                  </a>
-                  <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                     valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+               <div class="col-lg-4 col-md-12 footer-links">
+                  <h4>Kontak Kami</h4>
+                  <p>
+                     Desa Karangtengah
+                     Kecamatan Cilongok<br>
+                     Kabupaten Banyumas, Jawa Tengah<br>
+                     <strong>Phone</strong>: 081287756542 <br>
+                     <strong>Email</strong>: karangtengahdesawisata@gmail.com<br>
+                  </p>
                   <div class="social-links mt-3">
                      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                     <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-
+                     <a href="https://www.instagram.com/desawisata_karangtengah/" class="instagram"><i class="bi bi-instagram"></i></a>
                   </div>
-               </div>
-
-               <div class="col-lg-2 col-6 footer-links">
-                  <h4>Kontak Kami</h4>
-                  <p>
-                     A108 Adam Street <br>
-                     New York, NY 535022<br>
-                     United States <br><br>
-                     <strong>Phone:</strong> +1 5589 55488 55<br>
-                     <strong>Email:</strong> info@example.com<br>
-                  </p>
                </div>
 
                <div class="col-lg-5 col-md-12 footer-links">
@@ -104,7 +102,6 @@
          </div>
       </div>
 
-
       <div class="container">
          <div class="copyright">
             &copy; Copyright <strong><span>Pemerintah Desa Karangtengah</span></strong>. All Rights Reserved
@@ -112,10 +109,11 @@
       </div>
    </footer><!-- End Footer -->
 
+
    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-   <script src="/desain-pemrograman-web/website-desawisata-karangtengah/public/js/main.js"></script>
-   <script type="text/javascript" src="/desain-pemrograman-web/website-desawisata-karangtengah/public/js/mdb.min.js"></script>
-   <script type="text/javascript" src="/desain-pemrograman-web/website-desawisata-karangtengah/public/js/script.js"></script>
+   <script src="/website-desawisata-karangtengah/public/js/main.js"></script>
+   <script type="text/javascript" src="/website-desawisata-karangtengah/public/js/mdb.min.js"></script>
+   <script type="text/javascript" src="/website-desawisata-karangtengah/public/js/script.js"></script>
 </body>
 
 </html>
