@@ -111,7 +111,7 @@
                               <p>Industri Tahu ini dikelola oleh ibu murni Rt 1 Rw 1 warga desa Karangtengah</p>
                               <div class="d-flex justify-content-between align-items-center">
                                  <a href="" type="button" class="btn-hijau">Beli Sekarang</a>
-                                 <small class="text-muted">9 mins</small>
+
                               </div>
                            </div>
                         </div>
@@ -128,7 +128,7 @@
                               <p>Gula Kelapa ini dikelola oleh bapak Sunaryo Rt 1 Rw 2 warga desa Karangtengah</p>
                               <div class="d-flex justify-content-between align-items-center">
                                  <a href="" type="button" class="btn-hijau">Beli Sekarang</a>
-                                 <small class="text-muted">9 mins</small>
+
                               </div>
                            </div>
                         </div>
@@ -145,7 +145,7 @@
                               <p>Pengolahan Teh Hijau ini dikelola oleh bapak Hadi Rt 3 Rw 5 warga desa Karang Tengah </p>
                               <div class="d-flex justify-content-between align-items-center">
                                  <a href="" type="button" class="btn-hijau">Beli Sekarang</a>
-                                 <small class="text-muted">9 mins</small>
+
                               </div>
                            </div>
                         </div>

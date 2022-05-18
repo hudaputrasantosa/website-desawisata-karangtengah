@@ -12,12 +12,12 @@ body {
 }
 
 a {
-  color: #4154f1;
+  color: #12b4a7;
   text-decoration: none;
 }
 
 a:hover {
-  color: #717ff5;
+  color: #0c8178;
   text-decoration: none;
 }
 
@@ -48,7 +48,7 @@ section {
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
-  color: #4154f1;
+  color: #12b4a7;
   text-transform: uppercase;
 }
 
@@ -58,12 +58,12 @@ section {
   font-size: 38px;
   line-height: 42px;
   font-weight: 700;
-  color: #012970;
+  color: #12b4a7;
 }
 
 @media (max-width: 768px) {
   .section-header p {
-    font-size: 28px;
+    font-size: 25px;
     line-height: 32px;
   }
 }
@@ -73,7 +73,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #012970;
+  background: #12b4a7;
   min-height: 40px;
   margin-top: 82px;
   color: #fff;
@@ -173,7 +173,7 @@ section {
 .header.header-scrolled {
   background: #01a396;
   /* padding: 15px 0; */
-  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+
 }
 
 .header .logo {
@@ -189,7 +189,7 @@ section {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #012970;
+  color: #12b4a7;
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
 }
@@ -245,7 +245,7 @@ section {
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #4154f1;
+  background: #018075;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -2409,6 +2409,7 @@ section {
 
 .btn-hijau:hover {
   background-color: #018075;
+  color: white;
 }
 
 .btn-luar {
