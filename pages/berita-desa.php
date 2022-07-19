@@ -17,6 +17,7 @@
 
 <body>
    <?php
+   session_start();
    include '../component/header.php';
    ?>
 

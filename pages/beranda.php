@@ -21,6 +21,7 @@
 </head>
 
 <body>
+
    <!-- =======  Bagian Header ======= -->
    <header id="header" class="header fixed-top">
       <div class="container container-xl d-flex align-items-center justify-content-between">
@@ -33,7 +34,7 @@
                <li><a class="nav-link" href="">Beranda</a></li>
                <li class="dropdown"><a href=""><span>Profil Desa</span> <i class="bi bi-chevron-down"></i></a>
                   <ul>
-                     <li><a href="index.html" visimisi">Visi dan Misi</a></li>
+                     <li><a href="./visi-misi" visimisi">Visi dan Misi</a></li>
                      <li><a href="./pages/sejarah">Sejarah Desa</a></li>
                   </ul>
                </li>
@@ -112,9 +113,16 @@
                <!--Grid column-->
                <div class="col-md-10">
                   <!--Section: Content-->
-                  <section>
-                     <h3 style="font-weight: bold;">Berita Terkini</h3><br>
-                     <!-- Post -->
+
+
+                  <h3 style="font-weight: bold;">Berita Terkini</h3><br>
+                  <!-- Post -->
+                  <?php
+                  include './admin/config.php';
+
+                  $getBerita = mysqli_query($konfigur, "SELECT * FROM berita");
+                  while ($row = mysqli_fetch_array($getBerita)) {
+                  ?>
                      <div class="row">
                         <div class="col-md-4 mb-4">
                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
@@ -126,44 +134,23 @@
                         </div>
 
                         <div class="col-md-8 mb-4">
-                           <h5>Kemitraan Mahasiswa ITTP dengan Desa Karangtengah</h5>
+                           <h5><?= $row['judul_berita']; ?></h5>
                            <p class="mb-2">
-                              Sebanyak 4 mahasiswa prodi S1 Software Engineering Melaksanakan Kegiatan Kemitraan
-                              Dengan desa wisata Karangtengah Kab Cilongok. Kemitraan ini untuk memenuhi project
-                              tugas akhir, dengan mengembangkan sebuah perangkat lunak yaitu website desa wisata
-                              sebagai media informasi dan promosi.
+                              <?= $row['deskripsi']; ?>
                            </p>
                            <button type="button" class="btn-hijau">Baca Selengkapnya</button>
                         </div>
                      </div>
 
-                     <!-- Post -->
-                     <div class="row">
-                        <div class="col-md-4 mb-4">
-                           <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
-                              <img src="assets/img/beritaterkini/berita1.jpg" class="img-fluid" />
-                              <a href="#!">
-                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                              </a>
-                           </div>
-                        </div>
+                  <?php }
 
-                        <div class="col-md-8 mb-4">
-                           <h5>Kemitraan Mahasiswa ITTP dengan Desa Karangtengah</h5>
-                           <p class="mb-2">
-                              Sebanyak 4 mahasiswa prodi S1 Software Engineering Melaksanakan Kegiatan Kemitraan
-                              Dengan desa wisata Karangtengah Kab Cilongok. Kemitraan ini untuk memenuhi project
-                              tugas akhir, dengan mengembangkan sebuah perangkat lunak
-                              yaitu website desa wisata sebagai media informasi dan promosi.
-                           </p>
-                           <button type="button" class="btn-hijau">Baca Selengkapnya</button>
-                        </div>
-                     </div>
-                     <div class="pt-3 text-center">
-                        <a href="berita-desa.html" class="btn-outline">Lihat Berita
-                           Selengkapnya..</a>
-                     </div>
+                  ?>
+                  <div class="pt-3 text-center">
+                     <a href="berita-desa.html" class="btn-outline">Lihat Berita
+                        Selengkapnya..</a>
+                  </div>
                </div>
+
 
             </div>
          </div>
@@ -177,55 +164,20 @@
          <h3 style="font-weight: bold;">Pengurus Desa</h3><br>
          <div class="row gy-4">
             <div class="owl-carousel owl-theme">
+               <?php
+               $getData = mysqli_query($konfigur, "SELECT * FROM pengurus");
+               while ($rowPengurus = mysqli_fetch_array($getData)) {
+               ?>
+                  <div class="card">
+                     <div class="img"><img src="assets/img/pengurus/<?= $rowPengurus['foto_pengurus']; ?>" alt=""></div>
+                     <div class="content">
+                        <div class="title"><?= $rowPengurus['nama_pengurus']; ?></div>
+                        <div class="sub-title pb-5"><?= $rowPengurus['jabatan']; ?></div>
 
-               <div class="card">
-                  <div class="img"><img src="assets/img/pengurus/pengurus-1.jpg" alt=""></div>
-                  <div class="content">
-                     <div class="title">Huda Putra Santosa</div>
-                     <div class="sub-title pb-5">Kepala Desa</div>
-
+                     </div>
                   </div>
-               </div>
-               <div class="card">
-                  <div class="img"><img src="assets/img/pengurus/pengurus-1.jpg" alt=""></div>
-                  <div class="content">
-                     <div class="title">Huda Putra Santosa</div>
-                     <div class="sub-title pb-5">Sekretaris Desa</div>
-
-                  </div>
-               </div>
-               <div class="card">
-                  <div class="img"><img src="assets/img/pengurus/pengurus-1.jpg" alt=""></div>
-                  <div class="content">
-                     <div class="title">Huda Putra Santosa</div>
-                     <div class="sub-title pb-5">Kasi Pemeriksaan</div>
-
-                  </div>
-               </div>
-               <div class="card">
-                  <div class="img"><img src="assets/img/pengurus/pengurus-1.jpg" alt=""></div>
-                  <div class="content">
-                     <div class="title">Huda Putra Santosa</div>
-                     <div class="sub-title pb-5">Kasi Pelayanan</div>
-
-                  </div>
-               </div>
-               <div class="card">
-                  <div class="img"><img src="assets/img/pengurus/pengurus-1.jpg" alt=""></div>
-                  <div class="content">
-                     <div class="title">Huda Putra Santosa</div>
-                     <div class="sub-title pb-5">Kasi Kesejahteraan</div>
-
-                  </div>
-               </div>
-               <div class="card">
-                  <div class="img"><img src="assets/img/pengurus/pengurus-1.jpg" alt=""></div>
-                  <div class="content">
-                     <div class="title">Huda Putra Santosa</div>
-                     <div class="sub-title pb-5">Kasi Keuangan</div>
-
-                  </div>
-               </div>
+               <?php }
+               mysqli_close($konfigur); ?>
             </div>
          </div>
       </div>

@@ -23,28 +23,31 @@
 <body>
    <?php
    include '../component/header.php';
+   include '../admin/config.php';
+
+   $getData = mysqli_query($konfigur, "SELECT * FROM wisata");
+   while ($row = mysqli_fetch_array($getData)) {
    ?>
 
-   <div class="px-10 pt-5 my-5 text-center">
-      <h1 class="display-5 fw-bold">Curug Cipendok</h1>
-      <div class="col-lg-6 mx-auto">
-         <p class="lead mb-5">Curug Cipendok merupakan air terjun yang terletak di Desa Karangtengah, Kecamatan
-            Cilongok, Kabupaten Banyumas.
-            Memilikki ketinggian 92 meter dan kedalaman 20 meter, dengan lingkungan yang masih alami
-            dan hawa yang sejuk membuat jiwa dan pikiran terasa damai ketika mengunjungi nya.
-            Selain keindahan dan kesegaran, Curug Cipendok juga memilikki spot menarik buat yang suka fotografi.
-            Cukup bayar Rp 10.000 anda bisa menikmati destinasi wisata yang indah ini.
-      </div>
-      <div class="overflow-hidden">
-         <div class="container px-5">
-            <img src="../assets/img/wisata/wisata-1.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+      <div class="px-10 pt-5 my-5 text-center">
+         <h1 class="display-5 fw-bold"><?= $row['nama_wisata']; ?></h1>
+         <div class="col-lg-6 mx-auto">
+            <p class="lead mb-5"><?= $row['deskripsi_wisata']; ?>
          </div>
-      </div>
+         <a href="<?= $row['g-map']; ?>" class="mb-5"><?= $row['lokasi_wisata']; ?></a>
 
-   </div>
+         <div class="overflow-hidden">
+            <div class="container px-5">
+               <img src="../assets/img/wisata/<?= $row['foto']; ?>" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+            </div>
+         </div>
+
+      </div>
 
 
    <?php
+   }
+   mysqli_close($konfigur);
    include '../component/footer.php';
    ?>
 
