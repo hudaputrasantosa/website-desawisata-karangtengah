@@ -18,30 +18,36 @@
 
    <?php
    include '../component/header.php';
+   include '../admin/config.php';
+
+   $getData = mysqli_query($konfigur, "SELECT * FROM visi_misi");
+   while ($row = mysqli_fetch_array($getData)) {
    ?>
-   <div class="container px-4 py-5">
-      <div class="row flex-lg-row align-items-center g-5 py-5">
-         <div class="text-center">
-            <h1 class="display-6 fw-bold mt-5 lh-1 mb-3">VISI DAN MISI Desa Karangtengah</h1>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+      <div class="container px-4 py-5">
+         <div class="row flex-lg-row align-items-center g-5 py-5">
+            <div class="text-center">
+               <h1 class="display-6 fw-bold mt-5 lh-1 mb-3">VISI DAN MISI Desa Karangtengah</h1>
+               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+               </div>
             </div>
-         </div>
-         <div class="text-center">
-            <h3 class="display-8 fw-bold mt-5 lh-1 mb-3">Visi</h3>
-            <p class="lead">Isi dari visi.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <div class="text-center">
+               <h3 class="display-8 fw-bold mt-5 lh-1 mb-3">Visi</h3>
+               <p class="lead"><?= $row['visi_deskripsi']; ?></p>
+               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+               </div>
             </div>
-         </div>
-         <div class="text-center">
-            <h3 class="display-8 fw-bold mt-5 lh-1 mb-3">Misi</h3>
-            <p class="lead">Isi dari Misi.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <div class="text-center">
+               <h3 class="display-8 fw-bold mt-5 lh-1 mb-3">Misi</h3>
+               <p class="lead"><?= $row['misi_deskripsi']; ?></p>
+               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+               </div>
             </div>
          </div>
       </div>
-   </div>
 
    <?php
+   }
+   mysqli_close($konfigur);
    include '../component/footer.php';
    ?>
 

@@ -24,107 +24,107 @@
 
    <?php
    include '../component/header.php';
+   include '../admin/config.php';
+
+   $getData = mysqli_query($konfigur, "SELECT * FROM wisata");
+   while ($row = mysqli_fetch_array($getData)) {
    ?>
+      <main id="main">
+         <div class="container">
+            <div class="row">
 
+               <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="overlay-image">
+                           <img src="../assets/img/wisata/wisata-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="container">
 
-   <main id="main">
-      <div class="container">
-         <div class="row">
+                           <div class="carousel-caption">
+                              <h1>Curug Cipendok</h1>
+                              <p>Kecamatan Cilongok, Kabupaten Banyumas, Provinsi Jawa Tengah, Indonesia</p>
 
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-               <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img src="../assets/img/banner/Banner2..jpg " class="d-block w-100" alt=" ">
+                        <div class="container">
+                           <div class="carousel-caption">
+                              <h1>Banner Desa</h1>
+                              <p>Some representative placeholder content for the second slide of the carousel.</p>
+
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img src="../assets/img/banner/Banner3..jpg" class="d-block w-100" alt="">
+                        <div class="container">
+                           <div class="carousel-caption">
+                              <h1>Banner Desa</h1>
+                              <p>Some representative placeholder content for the second slide of the carousel.</p>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
                </div>
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="overlay-image">
-                        <img src="../assets/img/wisata/wisata-1.jpg" class="d-block w-100" alt="...">
-                     </div>
-                     <div class="container">
 
-                        <div class="carousel-caption">
-                           <h1>Curug Cipendok</h1>
-                           <p>Kecamatan Cilongok, Kabupaten Banyumas, Provinsi Jawa Tengah, Indonesia</p>
+               <main class="my-2">
+                  <div class="container">
+                     <!--Grid row-->
+                     <div class="row">
+                        <!--Grid column-->
+                        <div class="col-md-10 mb-4">
+                           <!--Section: Content-->
+                           <section>
+                              <h3>Desa Wisata</h3><br>
+                              <!-- Post -->
+                              <div class="row">
+                                 <div class="col-md-5 mb-5">
+                                    <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
+                                       <img src="../assets/img/wisata/<?= $row['foto']; ?>" class="img-fluid" />
+                                       <a href="#!">
+                                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                       </a>
+                                    </div>
+                                 </div>
 
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <img src="../assets/img/banner/Banner2..jpg " class="d-block w-100" alt=" ">
-                     <div class="container">
-                        <div class="carousel-caption">
-                           <h1>Banner Desa</h1>
-                           <p>Some representative placeholder content for the second slide of the carousel.</p>
+                                 <div class="col-md-7 mb-4">
+                                    <h4 style="font-weight: bold;"><?= $row['nama_wisata']; ?></h4>
+                                    <p>
+                                       <?= $row['deskripsi_wisata']; ?>
+                                    </p>
 
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <img src="../assets/img/banner/Banner3..jpg" class="d-block w-100" alt="">
-                     <div class="container">
-                        <div class="carousel-caption">
-                           <h1>Banner Desa</h1>
-                           <p>Some representative placeholder content for the second slide of the carousel.</p>
-
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-            </div>
-
-            <main class="my-2">
-               <div class="container">
-                  <!--Grid row-->
-                  <div class="row">
-                     <!--Grid column-->
-                     <div class="col-md-10 mb-4">
-                        <!--Section: Content-->
-                        <section>
-                           <h3>Desa Wisata</h3><br>
-                           <!-- Post -->
-                           <div class="row">
-                              <div class="col-md-5 mb-5">
-                                 <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
-                                    <img src="../assets/img/wisata/wisata-1.jpg" class="img-fluid" />
-                                    <a href="#!">
-                                       <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                    </a>
+                                    <a href="detail-wisata" type="button" class="btn-hijau">Lihat Selengkapnya</a>
                                  </div>
                               </div>
 
-                              <div class="col-md-7 mb-4">
-                                 <h4 style="font-weight: bold;">Curug Cipendok</h4>
-                                 <p>
-                                    Curug Cipendok merupakan air terjun yang terletak di Desa Karangtengah, Kecamatan
-                                    Cilongok, Kabupaten Banyumas.
-                                    Memilikki ketinggian 92 meter dan kedalaman 20 meter, dengan lingkungan yang masih
-                                    alami dan hawa yang sejuk membuat jiwa dan pikiran terasa damai ketika mengunjungi
-                                    nya.
-                                 </p>
-
-                                 <a href="detail-wisata" type="button" class="btn-hijau">Lihat Selengkapnya</a>
-                              </div>
-                           </div>
-
-                        </section>
+                           </section>
+                        </div>
                      </div>
                   </div>
-               </div>
 
 
-            </main>
-            <!--Main layout-->
+               </main>
+               <!--Main layout-->
 
+            </div>
          </div>
-      </div>
-   </main>
+      </main>
 
 
 
    <?php
+   }
+   mysqli_close($konfigur);
    include '../component/footer.php';
    ?>
 

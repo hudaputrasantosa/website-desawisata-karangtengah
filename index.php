@@ -1,2 +1,3 @@
 <?php
-require_once './pages/beranda.php';
+session_start();
+include './pages/beranda.php';

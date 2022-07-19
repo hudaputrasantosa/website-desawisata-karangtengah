@@ -78,57 +78,35 @@
                <div class="container">
 
                   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                     <div class="col">
-                        <div class="card shadow-sm">
-                           <img src="../assets/img/produkdesa/industritahu.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                           <title>Placeholder</title>
-                           <rect width="100%" height="100%" fill="#55595c" />
-                           </img>
-                           <div class="card-body">
-                              <h5>Industri Tahu</h5>
-                              <h4 style="font-weight: bold;">Rp. 5000/bungkus</h4>
-                              <p>Industri Tahu ini dikelola oleh ibu murni Rt 1 Rw 1 warga desa Karangtengah</p>
-                              <div class="d-flex justify-content-between align-items-center">
-                                 <a href="" type="button" class="btn-hijau">Beli Sekarang</a>
+                     <?php
+                     include '../admin/config.php';
+                     $getData = mysqli_query($konfigur, "SELECT * FROM produk");
+                     while ($row = mysqli_fetch_array($getData)) {
+                     ?>
 
+                        <div class="col">
+                           <div class="card shadow-sm">
+                              <img src="../assets/img/produkdesa/<?= $row['foto_produk']; ?>" class="bd-placeholder-img card-img-top" width="100%" height="225" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                              <title>Placeholder</title>
+                              <rect width="100%" height="100%" fill="#55595c" />
+                              </img>
+                              <div class="card-body">
+                                 <h5><?= $row['nama_produk']; ?></h5>
+                                 <h4 style="font-weight: bold;"><?= $row['harga'] . '/' . $row['ukuran'] ?></h4>
+                                 <p><?= $row['deskripsi']; ?></p>
+                                 <div class="d-flex justify-content-between align-items-center">
+                                    <a href="<?= $row['no_whatsapp']; ?>" type="button" class="btn-hijau">Beli Sekarang</a>
+                                    <a href="<?= $row['no_whatsapp']; ?>" type="button" class="btn-hijau">Maps </a>
+
+                                 </div>
                               </div>
                            </div>
                         </div>
-                     </div>
-                     <div class="col">
-                        <div class="card shadow-sm">
-                           <img src="../assets/img/produkdesa/gulakelapa.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                           <title>Placeholder</title>
-                           <rect width="100%" height="100%" fill="#55595c" />
-                           </img>
-                           <div class="card-body">
-                              <h5>Gula Kelapa</h5>
-                              <h4 style="font-weight: bold;">Rp. 16.000/kg</h4>
-                              <p>Gula Kelapa ini dikelola oleh bapak Sunaryo Rt 1 Rw 2 warga desa Karangtengah</p>
-                              <div class="d-flex justify-content-between align-items-center">
-                                 <a href="" type="button" class="btn-hijau">Beli Sekarang</a>
+                     <?php
+                     }
+                     mysqli_close($konfigur);
+                     ?>
 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col">
-                        <div class="card shadow-sm">
-                           <img src="../assets/img/produkdesa/tehhijau.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                           <title>Placeholder</title>
-                           <rect width="100%" height="100%" fill="#55595c" />
-                           </img>
-                           <div class="card-body">
-                              <h5>Pengolahan Teh Hijau</h5>
-                              <h4 style="font-weight: bold;">Rp. 60.000/kg</h4>
-                              <p>Pengolahan Teh Hijau ini dikelola oleh bapak Hadi Rt 3 Rw 5 warga desa Karang Tengah </p>
-                              <div class="d-flex justify-content-between align-items-center">
-                                 <a href="" type="button" class="btn-hijau">Beli Sekarang</a>
-
-                              </div>
-                           </div>
-                        </div>
-                     </div>
                   </div>
                </div>
             </div>

@@ -18,23 +18,29 @@
 
    <?php
    include '../component/header.php';
-   ?>
-   <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-         <div class="col-10 col-sm-8 col-lg-6">
-            <img src="../assets/img/banner/Banner1..jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-         </div>
-         <div class="col-lg-6">
-            <h1 class="display-5 fw-bold mt-5 lh-1 mb-4">Sejarah Desa Karangtengah</h1>
-            <p class="lead">Desa KarangTengah adalah desa di Kecamatan Cilongok, Banyumas, Jawa Tengah, yang terletak kurang lebih 15 Kilometer ke arah barat dari Purwokerto. extensive prebuilt components, and powerful JavaScript plugins.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+   include '../admin/config.php';
 
+   $getData = mysqli_query($konfigur, "SELECT * FROM sejarah");
+   while ($row = mysqli_fetch_array($getData)) {
+   ?>
+      <div class="container col-xxl-8 px-4 py-5">
+         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+               <img src="../assets/img/banner/<?= $row['foto']; ?>" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+               <h1 class="display-5 fw-bold mt-5 lh-1 mb-4">Sejarah Desa Karangtengah</h1>
+               <p class="lead"><?= $row['deskripsi']; ?></p>
+               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+
+               </div>
             </div>
          </div>
       </div>
-   </div>
 
    <?php
+   }
+   mysqli_close($konfigur);
    include '../component/footer.php';
    ?>
 
