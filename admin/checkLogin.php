@@ -13,6 +13,7 @@ if ($check > 0) {
    $data = mysqli_fetch_assoc($getData);
    $_SESSION['username'] = $user;
    $_SESSION['password'] = $pw;
+   $_SESSION['login'] = true;
 
    header('location: ./dashboard.php?suksesLogin');
    // echo 'berhasil';
