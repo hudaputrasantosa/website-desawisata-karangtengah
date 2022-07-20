@@ -54,7 +54,7 @@
                     ?>
                         <form class="form-horizontal form-material" action="update-sejarah-aksi.php" enctype="multipart/form-data" method="post">
                         <div class="form-group">
-                          
+                          <input type="hidden" name="_tempimg" value="<?= $row['foto']; ?>">
                            <div class="col-md-12">
                                 <textarea name="deskripsi" id="editor1" type="text" placeholder="Deskripsi" class="form-control form-control-line">
                                  <?= $row['deskripsi'] ?>
@@ -63,7 +63,7 @@
                         </div>
                         <div class="form-group">
                         <div class="col-sm-12">
-                        <input type="file" name="image" class="btn btn-primary btn-rounded" value="Upload File">
+                        <input type="file" name="image" class="btn btn-primary btn-rounded">
                         </div>
                             
                         </div>
