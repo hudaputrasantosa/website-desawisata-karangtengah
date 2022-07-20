@@ -32,10 +32,7 @@
             <div class="row bg-title">
                <div class="col-lg-12">
 
-                  <ol class="breadcrumb">
-                     <li><a href="#">Dashboard</a></li>
-                     <li class="active">Blank Page</li>
-                  </ol>
+                  
                </div>
                
                <!-- /.col-lg-12 -->
@@ -95,7 +92,10 @@
                         </div>
                      </form> -->
                      <div class="white-box">
-                        <button>Tambah Berita</button><br><br>
+                        <a href="./tambah-berita">
+                        <button class="btn btn-success">Tambah Berita</button>
+                        </a>
+                        <br><br>
 
                         <div class="table-responsive">
                            <table class="table">
@@ -122,7 +122,7 @@
                                     <td><?= $no++ ?></td>
                                     <td><?= $row['judul_berita']; ?></td>
                                     <td><?= $row['deskripsi']; ?></td>
-                                    <td><img src="./assets/img/banner/"<?= $row['foto_berita']; ?></td>
+                                    <td><img src="../assets/img/beritaterkini/<?= $row['foto_berita']; ?>" width="100" ></td>
                                     <td>
                                        <button class="btn btn-primary">Ubah</button>
                                     </td>
@@ -144,7 +144,7 @@
             <!-- /.container-fluid -->
          </div>
          <!-- /#page-wrapper -->
-         <footer class="footer text-center"> 2022 &copy; Desa Wisata Karangtengah</a> </footer>
+         <footer class="text-center"> 2022 &copy; Desa Wisata Karangtengah</a> </footer>
       </div>
       <!-- /#wrapper -->
       <!-- jQuery -->

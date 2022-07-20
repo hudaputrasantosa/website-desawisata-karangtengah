@@ -91,12 +91,7 @@
    ?>
 
                 </div>
-                <?php 
-                include './config.php';
-
-                $getData = mysqli_query($konfigur, "SELECT * FROM sejarah");
-                while ($row = mysqli_fetch_array($getData)) { 
-                    ?>
+               
                 <div class="row">
                     <div class="col-md-12">
                         <div class="white-box">
@@ -113,16 +108,22 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                        <?php 
+                include './config.php';
+
+                $getData = mysqli_query($konfigur, "SELECT * FROM sejarah");
+                while ($row = mysqli_fetch_array($getData)) { 
+                    ?>
                                             <tr>
                                                 <td><?= $row['deskripsi']; ?></td>
-                                                <td><img src="./assets/img/banner/<?= $row['foto']; ?>"></td>
+                                                <td><img src="../assets/img/sejarah/<?= $row['foto']; ?>" width="100"></td>
                                                 <td>
                                                 <a href="./update-sejarah">
                                                 <button class="btn btn-primary">Ubah</button>
                                                 </a>    
                                                 </td>
                                             </tr>
-
+                                            <?php } mysqli_close($konfigur) ?>
                                         </tbody>
                                     </table>
                                 </div>
@@ -131,7 +132,7 @@
                         </div>
                     </div>
                     <!-- /.row -->
-                </div><?php } mysqli_close($konfigur) ?>
+                </div>
                 <!-- /.container-fluid -->
             </div>
             <!-- /#page-wrapper -->
