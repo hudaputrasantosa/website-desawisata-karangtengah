@@ -122,7 +122,7 @@
                                     <td><?= $no++ ?></td>
                                     <td><?= $row['judul_berita']; ?></td>
                                     <td><?= $row['deskripsi']; ?></td>
-                                    <td><img src="../assets/img/beritaterkini/<?= $row['foto_berita']; ?>" width="100" ></td>
+                                    <!-- <td><img src="../assets/img/beritaterkini/<?= $row['foto_berita']; ?>" width="100" ></td> -->
                                     <td>
                                        <button class="btn btn-primary">Ubah</button>
                                     </td>
