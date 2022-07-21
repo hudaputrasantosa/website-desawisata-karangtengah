@@ -126,7 +126,7 @@
                      <div class="row">
                         <div class="col-md-4 mb-4">
                            <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
-                              <img src="assets/img/beritaterkini/berita1.jpg" class="img-fluid" />
+                              <img src="assets/img/beritaterkini/<?= $row['foto_berita']?>" class="img-fluid" />
                               <a href="#!">
                                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                               </a>
