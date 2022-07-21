@@ -119,12 +119,17 @@
                   ?>
 
                                  <tr>
+                                    
                                     <td><?= $no++ ?></td>
                                     <td><?= $row['judul_berita']; ?></td>
                                     <td><?= $row['deskripsi']; ?></td>
-                                    <!-- <td><img src="../assets/img/beritaterkini/<?= $row['foto_berita']; ?>" width="100" ></td> -->
-                                    <td>
+                                    <td><img src="../assets/img/beritaterkini/<?= $row['foto_berita']; ?>" width="100" ></td>
+                                    <td><a href="./update-berita?idBerita=<?= $row['id_berita']; ?>">
                                        <button class="btn btn-primary">Ubah</button>
+                                       </a>
+                                       <a href="./hapus-berita-aksi?idBerita=<?= $row['id_berita']; ?>">
+                                       <button class="btn btn-danger">Hapus</button>
+                                       </a>
                                     </td>
 
                                  </tr>
