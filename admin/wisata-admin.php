@@ -32,10 +32,7 @@
             <div class="row bg-title">
                <div class="col-lg-12">
 
-                  <ol class="breadcrumb">
-                     <li><a href="#">Dashboard</a></li>
-                     <li class="active">Blank Page</li>
-                  </ol>
+
                </div>
                <!-- /.col-lg-12 -->
             </div>
@@ -44,57 +41,8 @@
                <div class="col-md-12">
                   <div class="white-box">
                      <h3>Wisata Desa</h3>
-                     <!-- <form class="form-horizontal form-material">
-                        <div class="form-group">
-                           <label class="col-md-12">Full Name</label>
-                           <div class="col-md-12">
-                              <input type="text" placeholder="Johnathan Doe" class="form-control form-control-line">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label for="example-email" class="col-md-12">Email</label>
-                           <div class="col-md-12">
-                              <input type="email" placeholder="johnathan@admin.com" class="form-control form-control-line" name="example-email" id="example-email">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Password</label>
-                           <div class="col-md-12">
-                              <input type="password" value="password" class="form-control form-control-line">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Phone No</label>
-                           <div class="col-md-12">
-                              <input type="text" placeholder="123 456 7890" class="form-control form-control-line">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Message</label>
-                           <div class="col-md-12">
-                              <textarea rows="5" class="form-control form-control-line"></textarea>
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-sm-12">Select Country</label>
-                           <div class="col-sm-12">
-                              <select class="form-control form-control-line">
-                                 <option>London</option>
-                                 <option>India</option>
-                                 <option>Usa</option>
-                                 <option>Canada</option>
-                                 <option>Thailand</option>
-                              </select>
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <div class="col-sm-12">
-                              <button class="btn btn-success">Update Profile</button>
-                           </div>
-                        </div>
-                     </form> -->
                      <div class="white-box">
-                        <button>Tambah Wisata</button><br><br>
+                        <button class="btn btn-success">Tambah Wisata</button><br><br>
                         <div class="table-responsive">
                            <table class="table">
                               <thead>
@@ -108,36 +56,37 @@
                                  </tr>
                               </thead>
                               <tbody>
-                              <?php 
-             include '../admin/config.php';
-   $no = 1;
-             $getData = mysqli_query($konfigur, "SELECT * FROM wisata");
-             while ($row = mysqli_fetch_array($getData)) {?>
-                                 <tr>
-                                    <td><?php echo $no++; ?></td>
-                                    <td><?= $row['nama_wisata']; ?></td>
-                                    <td><?= $row['lokasi_wisata']; ?></td>
-                                    <td><?= $row['g-map']; ?></td>
-                                    <td><?= $row['deskripsi_wisata']; ?></td>
-                                    <td>
-                                       <button>Ubah</button>
-                                    </td>
+                                 <?php
+                                 include '../admin/config.php';
+                                 $no = 1;
+                                 $getData = mysqli_query($konfigur, "SELECT * FROM wisata");
+                                 while ($row = mysqli_fetch_array($getData)) { ?>
+                                    <tr>
+                                       <td><?php echo $no++; ?></td>
+                                       <td><?= $row['nama_wisata']; ?></td>
+                                       <td><?= $row['lokasi_wisata']; ?></td>
+                                       <td><?= $row['g-map']; ?></td>
+                                       <td><?= $row['deskripsi_wisata']; ?></td>
+                                       <td>
+                                          <button>Ubah</button>
+                                       </td>
 
-                                 </tr>
-                                 </div><?php } mysqli_close($konfigur) ?>
-                              </tbody>
-                           </table>
-                        </div>
-
+                                    </tr>
+                        </div><?php }
+                                 mysqli_close($konfigur) ?>
+                     </tbody>
+                     </table>
                      </div>
+
                   </div>
                </div>
-               <!-- /.row -->
-           
+            </div>
+            <!-- /.row -->
+
             <!-- /.container-fluid -->
          </div>
          <!-- /#page-wrapper -->
-         <footer class="footer text-center"> 2022 &copy; Desa Wisata Karangtengah</a> </footer>
+         <footer class=" text-center"> 2022 &copy; Desa Wisata Karangtengah</a> </footer>
       </div>
       <!-- /#wrapper -->
       <!-- jQuery -->
