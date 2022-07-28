@@ -29,14 +29,14 @@ dapat memudahkan masyarakat setempat dan sekitar untuk memperoleh informasi yang
 diberikan oleh pemerintah Desa Karang Tengah
 
 
-## TIM PENGUSUL
+### TIM PENGUSUL
 1. Rosalina Alda – 20104066 – Rekayasa Perangkat Lunak
 2. Yoga Wahyu Pratama – 20104068 – Rekayasa Perangkat Lunak
 3. Fajar Maulana Thaariq Al Buruuj – 20104081 – Rekayasa Perangkat Lunak
 4. Huda Putra Santosa – 20104087 – Rekayasa Perangkat Lunak [Full-Stack Developer]
 
 
-## JADWAL PELAKSANAAN
+### JADWAL PELAKSANAAN
 
 | No   | Nama Kegiatan    | Waktu dan Tanggal Pelaksanaan    |
 | ------------- | ------------- | -------- |
