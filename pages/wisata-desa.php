@@ -4,8 +4,8 @@
 <head>
    <meta charset="utf-8">
    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-   <title>Desa Karangtengah</title>
-   <link href="assets/img/favicon.png" rel="icon">
+   <title>Wisata Desa</title>
+   <link href="../assets/img/favicon.ico" rel="icon">
 
    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <link href="../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -21,11 +21,11 @@
 </head>
 
 <body>
-      <main id="main">
-         <div class="container">
-            <div class="row">
+   <main id="main">
+      <div class="container">
+         <div class="row">
 
-               <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-indicators">
                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -67,25 +67,36 @@
                      </div>
                   </div>
 
-               </div>
+               </div> -->
 
-               <main class="my-2">
-                  <div class="container">
-                     <!--Grid row-->
-                     <div class="row">
-                        <!--Grid column-->
-                        <div class="col-md-10 mb-4">
-                           <!--Section: Content-->
-                           <section>
-                              <h3>Desa Wisata</h3><br>
-                              <!-- Post -->
-                              <?php
-   include '../component/header.php';
-   include '../admin/config.php';
+            <main class="my-5">
+               <div class="container">
+                  <!--Grid row-->
+                  <div class="row">
+                     <!--Grid column-->
+                     <div class="col-md-10 mb-4">
+                        <!--Section: Content-->
+                        <section>
+                           <h3 style="font-weight: bold;">Wisata Desa</h3><br>
+                           <!-- Post -->
+                           <?php
+                           include '../component/header.php';
+                           include '../admin/config.php';
 
-   $getData = mysqli_query($konfigur, "SELECT * FROM wisata");
-   while ($row = mysqli_fetch_array($getData)) {
-   ?>
+                           $batas = 6;
+                           $halaman = isset($_GET['halaman']) ? (int)$_GET['halaman'] : 1;
+                           $halaman_awal = ($halaman > 1) ? ($halaman * $batas) - $batas : 0;
+
+                           $previous = $halaman - 1;
+                           $next = $halaman + 1;
+
+                           $data = mysqli_query($konfigur, "SELECT * FROM wisata");
+                           $jumlah_data = mysqli_num_rows($data);
+                           $total_halaman = ceil($jumlah_data / $batas);
+
+                           $getData = mysqli_query($konfigur, "SELECT * FROM wisata limit $halaman_awal, $batas");
+                           while ($row = mysqli_fetch_array($getData)) {
+                           ?>
                               <div class="row">
                                  <div class="col-md-5 mb-5">
                                     <div class="bg-image hover-overlay shadow-1-strong rounded ripple" data-mdb-ripple-color="light">
@@ -99,27 +110,49 @@
                                  <div class="col-md-7 mb-4">
                                     <h4 style="font-weight: bold;"><?= $row['nama_wisata']; ?></h4>
                                     <p>
-                                       <?= $row['deskripsi_wisata']; ?>
+                                       <?php echo (str_word_count($row['deskripsi_wisata']) > 50 ? substr($row['deskripsi'], 0, 255) . ' ...' : $row['deskripsi_wisata'])  ?>
                                     </p>
 
-                                    <a href="detail-wisata" type="button" class="btn-hijau">Lihat Selengkapnya</a>
+                                    <a href="detail-wisata?id_wisata=<?= $row['id_wisata']; ?>">Lihat Selengkapnya</a>
                                  </div>
                               </div>
-                              <?php  }
-   mysqli_close($konfigur); ?>
+                           <?php  }
+                           mysqli_close($konfigur); ?>
 
-                           </section>
+                        </section>
+                        <div class="mx-auto">
+                           <nav>
+                              <ul class="pagination">
+                                 <li class="page-item">
+                                    <a class="page-link" <?php if ($halaman > 1) {
+                                                            echo "href='?halaman=$previous'";
+                                                         } ?>tabindex="-1">Sebelumnya</a>
+                                 </li>
+                                 <?php
+                                 for ($x = 1; $x <= $total_halaman; $x++) {
+
+                                 ?>
+                                    <li class="page-item <?php ($next || $previous == $x) ? "active" : "" ?>"><a class="page-link" href="?halaman=<?php echo $x ?>"><?php echo $x; ?></a></li>
+                                 <?php } ?>
+                                 <li class="page-item">
+                                    <a class="page-link" <?php if ($halaman < $total_halaman) {
+                                                            echo "href='?halaman=$next'";
+                                                         } ?>>Selanjutnya</a>
+                                 </li>
+                              </ul>
+                           </nav>
                         </div>
                      </div>
                   </div>
+               </div>
 
 
-               </main>
-               <!--Main layout-->
+            </main>
+            <!--Main layout-->
 
-            </div>
          </div>
-      </main>
+      </div>
+   </main>
 
 
 
@@ -128,9 +161,7 @@
    ?>
 
    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-   <script src="/website-desawisata-karangtengah/public/js/main.js"></script>
-   <script type="text/javascript" src="/website-desawisata-karangtengah/public/js/mdb.min.js"></script>
-   <script type="text/javascript" src="/website-desawisata-karangtengah/public/js/script.js"></script>
+
 </body>
 
 </html>

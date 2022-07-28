@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,7 +33,7 @@
             <div class="row bg-title">
                <div class="col-lg-12">
 
-                  
+
                </div>
                <!-- /.col-lg-12 -->
             </div>
@@ -43,37 +42,39 @@
                <div class="col-md-12">
                   <div class="white-box">
                      <h3>Deskripsi</h3>
-                  
-                        <form class="form-horizontal form-material" action="tambah-berita-aksi" enctype="multipart/form-data" method="post">
-                        <div class="form-group">
-                        <div class="col-md-12">
-                        <input type="text" name="judul" class="form form-control" placeholder="Judul Berita">
-                        </div>
-                        </div>
-                          
+
+                     <form class="form-horizontal form-material" action="tambah-berita-aksi" enctype="multipart/form-data" method="post">
                         <div class="form-group">
                            <div class="col-md-12">
-                               <label for="deskripsi">Isi Berita</label>
-                                <textarea name="deskripsi" id="editor1" type="text" placeholder="Ketikan Isi berita.." class="form-control form-control-line">
-                                 
+                              <input type="text" name="judul" class="form form-control" placeholder="Judul Berita">
+                           </div>
+                        </div>
+
+                        <div class="form-group">
+                           <div class="col-md-12">
+                              <label for="deskripsi">Isi Berita</label>
+                              <textarea name="deskripsi" id="editor1" type="text" placeholder="Ketikan Isi berita.." class="form-control form-control-line">
+
                                 </textarea>
                            </div>
                         </div>
                         <div class="form-group">
-                        <div class="col-sm-12">
-                        <input type="file" name="image" class="btn btn-primary btn-rounded">
+                           <div class="col-sm-12">
+                              <input type="file" name="image" class="btn btn-primary btn-rounded">
+                           </div>
+
                         </div>
-                            
-                        </div>
-                       
-                        
+                        <?php
+
+                        ?>
+
                         <div class="form-group">
                            <div class="col-sm-12">
                               <input name="submit" type="submit" class="btn btn-primary" value="Posting Berita">
                            </div>
                         </div>
                      </form>
-                    
+
                   </div>
                </div>
                <!-- /.row -->
@@ -97,9 +98,9 @@
       <!-- Custom Theme JavaScript -->
       <script src="js/myadmin.js"></script>
       <script>
-        CKEDITOR.replace('editor1');
-        CKEDITOR.replace('editor2');
-    </script>
+         CKEDITOR.replace('editor1');
+         CKEDITOR.replace('editor2');
+      </script>
 </body>
 
 </html>

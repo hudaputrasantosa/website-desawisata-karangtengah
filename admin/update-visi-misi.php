@@ -1,7 +1,7 @@
 <?php
-    include('config.php');
+include('config.php');
 
-    $query = $konfigur->query("SELECT * FROM visi_misi limit 1");
+$query = $konfigur->query("SELECT * FROM visi_misi limit 1");
 
 ?>
 
@@ -40,7 +40,7 @@
             <div class="row bg-title">
                <div class="col-lg-12">
 
-                  
+
                </div>
                <!-- /.col-lg-12 -->
             </div>
@@ -49,33 +49,33 @@
                <div class="col-md-12">
                   <div class="white-box">
                      <h3>Visi Misi</h3>
-                   <?php 
-                     while ($row = mysqli_fetch_array($query)) { 
-                    ?>
+                     <?php
+                     while ($row = mysqli_fetch_array($query)) {
+                     ?>
                         <form class="form-horizontal form-material" action="update-visi-misi-aksi" enctype="multipart/form-data" method="post">
-                        <div class="form-group">
-                           <label class="col-md-12">Visi</label>
-                           <div class="col-md-12">
-                                <textarea name="visi" id="editor1" type="text" placeholder="visi" class="form-control form-control-line">
+                           <div class="form-group">
+                              <label class="col-md-12">Visi</label>
+                              <div class="col-md-12">
+                                 <textarea name="visi" id="editor1" type="text" placeholder="visi" class="form-control form-control-line">
                                  <?= $row['visi_deskripsi'] ?>
                                 </textarea>
+                              </div>
                            </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Misi</label>
-                           <div class="col-md-12">
-                                <textarea name="misi" id="editor2" type="text" placeholder="misi" class="form-control form-control-line">
+                           <div class="form-group">
+                              <label class="col-md-12">Misi</label>
+                              <div class="col-md-12">
+                                 <textarea name="misi" id="editor2" type="text" placeholder="misi" class="form-control form-control-line">
                                  <?= $row['misi_deskripsi'] ?>
                                 </textarea>
+                              </div>
                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                           <div class="col-sm-12">
-                              <input name="submit" type="submit" class="btn btn-primary" value="Update">
+
+                           <div class="form-group">
+                              <div class="col-sm-12">
+                                 <input name="submit" type="submit" class="btn btn-primary" value="Update">
+                              </div>
                            </div>
-                        </div>
-                     </form>
+                        </form>
                      <?php
                      }
                      ?>
@@ -102,9 +102,9 @@
       <!-- Custom Theme JavaScript -->
       <script src="js/myadmin.js"></script>
       <script>
-        CKEDITOR.replace('editor1');
-        CKEDITOR.replace('editor2');
-    </script>
+         CKEDITOR.replace('editor1');
+         CKEDITOR.replace('editor2');
+      </script>
 </body>
 
 </html>

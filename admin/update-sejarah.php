@@ -64,6 +64,7 @@
                         <div class="form-group">
                         <div class="col-sm-12">
                         <input type="file" name="image" class="btn btn-primary btn-rounded">
+                        <?= $row['foto']; ?>
                         </div>
                             
                         </div>

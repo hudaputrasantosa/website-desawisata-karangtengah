@@ -8,7 +8,7 @@
    <meta name="keywords" content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 4 admin, bootstrap 4, css3 dashboard, bootstrap 4 dashboard, severny admin bootstrap 4 dashboard, frontend, responsive bootstrap 4 admin template, my admin design, my admin dashboard bootstrap 4 dashboard template">
    <meta name="description" content="My Admin is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
    <meta name="robots" content="noindex,nofollow">
-   <title>Berita Desa</title>
+   <title>Wisata Desa</title>
    <link rel="canonical" href="https://www.wrappixel.com/templates/myadmin-lite/" />
    <!-- Favicon icon -->
    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
@@ -18,6 +18,7 @@
    <link href="bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
    <!-- Custom CSS -->
    <link href="css/style.css" rel="stylesheet">
+   <script src="//cdn.ckeditor.com/4.19.0/basic/ckeditor.js"></script>
 </head>
 
 <body>
@@ -32,10 +33,7 @@
             <div class="row bg-title">
                <div class="col-lg-12">
 
-                  <ol class="breadcrumb">
-                     <li><a href="#">Dashboard</a></li>
-                     <li class="active">Blank Page</li>
-                  </ol>
+
                </div>
                <!-- /.col-lg-12 -->
             </div>
@@ -43,101 +41,62 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="white-box">
-                     <h3>Wisata Desa</h3>
-                     <!-- <form class="form-horizontal form-material">
-                        <div class="form-group">
-                           <label class="col-md-12">Full Name</label>
-                           <div class="col-md-12">
-                              <input type="text" placeholder="Johnathan Doe" class="form-control form-control-line">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label for="example-email" class="col-md-12">Email</label>
-                           <div class="col-md-12">
-                              <input type="email" placeholder="johnathan@admin.com" class="form-control form-control-line" name="example-email" id="example-email">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Password</label>
-                           <div class="col-md-12">
-                              <input type="password" value="password" class="form-control form-control-line">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Phone No</label>
-                           <div class="col-md-12">
-                              <input type="text" placeholder="123 456 7890" class="form-control form-control-line">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Message</label>
-                           <div class="col-md-12">
-                              <textarea rows="5" class="form-control form-control-line"></textarea>
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-sm-12">Select Country</label>
-                           <div class="col-sm-12">
-                              <select class="form-control form-control-line">
-                                 <option>London</option>
-                                 <option>India</option>
-                                 <option>Usa</option>
-                                 <option>Canada</option>
-                                 <option>Thailand</option>
-                              </select>
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <div class="col-sm-12">
-                              <button class="btn btn-success">Update Profile</button>
-                           </div>
-                        </div>
-                     </form> -->
-                     <div class="white-box">
-                        <button>Tambah Wisata</button><br><br>
-                        <div class="table-responsive">
-                           <table class="table">
-                              <thead>
-                                 <tr>
-                                    <th>No</th>
-                                    <th>Nama Wisata</th>
-                                    <th>Lokasi</th>
-                                    <th>Gmaps</th>
-                                    <th>Deskripsi</th>
-                                    <th>Aksi</th>
-                                 </tr>
-                              </thead>
-                              <tbody>
-                              <?php 
-             include '../admin/config.php';
-   $no = 1;
-             $getData = mysqli_query($konfigur, "SELECT * FROM wisata");
-             while ($row = mysqli_fetch_array($getData)) {?>
-                                 <tr>
-                                    <td><?php echo $no++; ?></td>
-                                    <td><?= $row['nama_wisata']; ?></td>
-                                    <td><?= $row['lokasi_wisata']; ?></td>
-                                    <td><?= $row['g-map']; ?></td>
-                                    <td><?= $row['deskripsi_wisata']; ?></td>
-                                    <td>
-                                       <button>Ubah</button>
-                                    </td>
+                     <h3>Tambah Wisata</h3>
 
-                                 </tr>
-                                 </div><?php } mysqli_close($konfigur) ?>
-                              </tbody>
-                           </table>
+                     <form class="form-horizontal form-material" action="tambah-wisata-aksi" enctype="multipart/form-data" method="post">
+                        <div class="form-group">
+                           <div class="col-md-12">
+                              <input type="text" name="nama" class="form form-control" placeholder="Nama Wisata">
+                           </div>
                         </div>
 
-                     </div>
+                        <div class="form-group">
+                           <div class="col-sm-12">
+                              <input type="file" name="image" class="btn btn-primary btn-rounded">
+                           </div>
+
+                        </div>
+
+                        <div class="form-group">
+                           <div class="col-md-12">
+                              <input type="text" name="lokasi" class="form form-control" placeholder="Lokasi Wisata">
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <div class="col-md-12">
+                              <input type="text" name="gmap" class="form form-control" placeholder="Link Embed Google Maps">
+                              <a href="" style="font-size:0.8em">Panduan Embed Gmaps</a>
+                           </div>
+                        </div>
+
+                        <div class="form-group">
+                           <div class="col-md-12">
+                              <label for="deskripsi">Deskripsi</label>
+                              <textarea name="deskripsi" id="editor1" type="text" placeholder="Ketikan Isi berita.." class="form-control form-control-line">
+
+                                </textarea>
+                           </div>
+                        </div>
+
+                        <?php
+
+                        ?>
+
+                        <div class="form-group">
+                           <div class="col-sm-12">
+                              <input name="submit" type="submit" class="btn btn-primary" value="Tambah Wisata">
+                           </div>
+                        </div>
+                     </form>
+
                   </div>
                </div>
                <!-- /.row -->
-           
+            </div>
             <!-- /.container-fluid -->
          </div>
          <!-- /#page-wrapper -->
-         <footer class="footer text-center"> 2022 &copy; Desa Wisata Karangtengah</a> </footer>
+         <footer class=" text-center"> 2022 &copy; Desa Wisata Karangtengah</a> </footer>
       </div>
       <!-- /#wrapper -->
       <!-- jQuery -->
@@ -152,6 +111,10 @@
       <script src="js/waves.js"></script>
       <!-- Custom Theme JavaScript -->
       <script src="js/myadmin.js"></script>
+      <script>
+         CKEDITOR.replace('editor1');
+         CKEDITOR.replace('editor2');
+      </script>
 </body>
 
 </html>

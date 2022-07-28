@@ -13,11 +13,10 @@ if (isset($_POST['submit'])) {
   $query = mysqli_query($konfigur, "UPDATE footer SET deskripsi = '$deskripsi', alamat = '$alamat', telepon = '$telepon', maps = '$maps', instagram = '$instagram', facebook = '$facebook', twitter = '$twitter'");
 
   if ($query) {
-    header("location: footer-admin.php");
+    header("location: footer-admin");
   } else {
     echo 'Data gagal diinput. Silahkan coba lagi <a href="footer-admin.php">Di sini</a>';
   }
-
 } else {
   header("location: footer-admin.php");
 }

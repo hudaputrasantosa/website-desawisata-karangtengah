@@ -4,8 +4,8 @@
 <head>
    <meta charset="utf-8">
    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-   <title>Desa Karangtengah</title>
-   <link href="assets/img/favicon.png" rel="icon">
+   <title>Detail Wisata</title>
+   <link href="../assets/img/favicon.ico" rel="icon">
 
    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <link href="../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -22,10 +22,12 @@
 
 <body>
    <?php
+
    include '../component/header.php';
    include '../admin/config.php';
+   $id = $_GET['id_wisata'];
 
-   $getData = mysqli_query($konfigur, "SELECT * FROM wisata");
+   $getData = mysqli_query($konfigur, "SELECT * FROM wisata WHERE id_wisata='$id'");
    while ($row = mysqli_fetch_array($getData)) {
    ?>
 
@@ -34,9 +36,9 @@
          <div class="col-lg-6 mx-auto">
             <p class="lead mb-5"><?= $row['deskripsi_wisata']; ?>
          </div>
-         <a href="<?= $row['g-map']; ?>" class="mb-5"><?= $row['lokasi_wisata']; ?></a>
+         <i class="bi bi-geo-alt-fill"></i>Lokasi <a href="<?= $row['gmap']; ?>" target="_blank" class="mb-5"><?= $row['lokasi_wisata']; ?></a>
 
-         <div class="overflow-hidden">
+         <div class="overflow-hidden my-4">
             <div class="container px-5">
                <img src="../assets/img/wisata/<?= $row['foto']; ?>" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
             </div>
@@ -52,9 +54,7 @@
    ?>
 
    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-   <script src="/website-desawisata-karangtengah/public/js/main.js"></script>
-   <script type="text/javascript" src="/website-desawisata-karangtengah/public/js/mdb.min.js"></script>
-   <script type="text/javascript" src="/website-desawisata-karangtengah/public/js/script.js"></script>
+
 </body>
 
 </html>

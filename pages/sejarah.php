@@ -4,8 +4,8 @@
 <head>
    <meta charset="utf-8">
    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-   <title>Desa Karangtengah</title>
-   <link href="assets/img/favicon.png" rel="icon">
+   <title>Sejarah</title>
+   <link href="../assets/img/favicon.ico" rel="icon">
    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <link href="../assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
    <link href="../css/carousel.css" rel="stylesheet">
@@ -46,9 +46,7 @@
 
 
    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-   <script src="/website-desawisata-karangtengah/public/js/main.js"></script>
-   <script type="text/javascript" src="/website-desawisata-karangtengah/public/js/mdb.min.js"></script>
-   <script type="text/javascript" src="/website-desawisata-karangtengah/public/js/script.js"></script>
+
 </body>
 
 </html>

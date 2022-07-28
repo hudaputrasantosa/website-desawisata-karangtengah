@@ -32,10 +32,7 @@
             <div class="row bg-title">
                <div class="col-lg-12">
 
-                  <ol class="breadcrumb">
-                     <li><a href="#">Dashboard</a></li>
-                     <li class="active">Blank Page</li>
-                  </ol>
+
                </div>
                <!-- /.col-lg-12 -->
             </div>
@@ -44,57 +41,9 @@
                <div class="col-md-12">
                   <div class="white-box">
                      <h3>Produk Desa</h3>
-                     <!-- <form class="form-horizontal form-material">
-                        <div class="form-group">
-                           <label class="col-md-12">Full Name</label>
-                           <div class="col-md-12">
-                              <input type="text" placeholder="Johnathan Doe" class="form-control form-control-line">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label for="example-email" class="col-md-12">Email</label>
-                           <div class="col-md-12">
-                              <input type="email" placeholder="johnathan@admin.com" class="form-control form-control-line" name="example-email" id="example-email">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Password</label>
-                           <div class="col-md-12">
-                              <input type="password" value="password" class="form-control form-control-line">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Phone No</label>
-                           <div class="col-md-12">
-                              <input type="text" placeholder="123 456 7890" class="form-control form-control-line">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Message</label>
-                           <div class="col-md-12">
-                              <textarea rows="5" class="form-control form-control-line"></textarea>
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-sm-12">Select Country</label>
-                           <div class="col-sm-12">
-                              <select class="form-control form-control-line">
-                                 <option>London</option>
-                                 <option>India</option>
-                                 <option>Usa</option>
-                                 <option>Canada</option>
-                                 <option>Thailand</option>
-                              </select>
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <div class="col-sm-12">
-                              <button class="btn btn-success">Update Profile</button>
-                           </div>
-                        </div>
-                     </form> -->
+
                      <div class="white-box">
-                        <button>Tambah Produk</button><br><br>
+                        <a href="./tambah-produk" class="btn btn-success">Tambah Produk</a><br><br>
                         <div class="table-responsive">
                            <table class="table">
                               <thead>
@@ -111,25 +60,27 @@
                                  </tr>
                               </thead>
                               <tbody>
-                                 <?php 
+                                 <?php
                                  include './config.php';
                                  $getData = mysqli_query($konfigur, "SELECT * FROM produk");
                                  while ($row = mysqli_fetch_array($getData)) { ?>
-                                 <tr>
-                                    <td>1</td>
-                                    <td><?= $row['nama_produk']; ?></td>
-                                    <td><?= $row['harga'] ; ?></td>
-                                    <td><?= $row['ukuran']; ?></td>
-                                    <td><?= $row['deskripsi']; ?></td>
-                                    <td><?= $row['alamat']; ?></td>
-                                    <td><?= $row['no_whatsapp']; ?></td>
-                                    <td><img src="../assets/img/banner/<?= $row['foto_produk']; ?>"></td>
-                                    <td>
-                                       <button>Ubah</button>
-                                    </td>
+                                    <tr>
+                                       <td>1</td>
+                                       <td><?= $row['nama_produk']; ?></td>
+                                       <td><?= $row['harga']; ?></td>
+                                       <td><?= $row['ukuran']; ?></td>
+                                       <td><?= $row['deskripsi']; ?></td>
+                                       <td><?= $row['alamat']; ?></td>
+                                       <td><?= $row['no_whatsapp']; ?></td>
+                                       <td><img src="../assets/img/produkdesa/<?= $row['foto_produk']; ?>" width="100"></td>
+                                       <td>
+                                          <a href="./update-produk?id_produk=<?= $row['id_produk']; ?>" class="btn btn-primary">Ubah</a>
+                                          <a href="./hapus-produk?id_produk=<?= $row['id_produk']; ?>" class="btn btn-danger">Hapus</a>
+                                       </td>
 
-                                 </tr>
-                                 <?php } mysqli_close($konfigur) ?>
+                                    </tr>
+                                 <?php }
+                                 mysqli_close($konfigur) ?>
                               </tbody>
                            </table>
                         </div>
@@ -142,7 +93,7 @@
             <!-- /.container-fluid -->
          </div>
          <!-- /#page-wrapper -->
-         <footer class="footer text-center"> 2022 &copy; Desa Wisata Karangtengah</a> </footer>
+         <footer class="text-center"> 2022 &copy; Desa Wisata Karangtengah</a> </footer>
       </div>
       <!-- /#wrapper -->
       <!-- jQuery -->

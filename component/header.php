@@ -17,13 +17,7 @@
                <li><a class="nav-link" href="./berita-desa">Berita Desa</a></li>
                <li><a class="nav-link" href="./wisata-desa">Wisata</a></li>
                <li><a class="nav-link" href="./produk-desa">Produk Desa</a></li>
-               <li>
-                  <a>
-                     <div class="input-group">
-                        <input type="search" class="form-control form-control-light" placeholder="Cari...">
-                     </div>
-                  </a>
-               </li>
+
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
          </nav>

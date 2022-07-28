@@ -49,12 +49,15 @@ include 'config.php';
             <a href="./produk-admin" class="waves-effect">Produk Desa</a>
          </li>
          <li>
+            <a href="./foto-pengurus" class="waves-effect">Foto Pengurus</a>
+         </li>
+         <li>
             <a href="./footer-admin" class="waves-effect">Footer</a>
          </li>
 
       </ul>
       <div class="center p-20">
-         <span class="hide-menu"><a href="http://wrappixel.com/templates/myadmin/" target="_blank" class="btn btn-danger btn-block btn-rounded waves-effect waves-light">Keluar</a></span>
+         <span class="hide-menu"><a href="./logout.php" class="btn btn-danger btn-block btn-rounded waves-effect waves-light">Keluar</a></span>
       </div>
    </div>
    <!-- /.sidebar-collapse -->

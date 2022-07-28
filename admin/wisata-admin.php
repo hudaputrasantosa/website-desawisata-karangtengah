@@ -41,8 +41,11 @@
                <div class="col-md-12">
                   <div class="white-box">
                      <h3>Wisata Desa</h3>
+
                      <div class="white-box">
-                        <button class="btn btn-success">Tambah Wisata</button><br><br>
+                        <a href="./tambah-wisata">
+                           <button class="btn btn-success">Tambah Wisata</button>
+                        </a><br><br>
                         <div class="table-responsive">
                            <table class="table">
                               <thead>
@@ -51,6 +54,7 @@
                                     <th>Nama Wisata</th>
                                     <th>Lokasi</th>
                                     <th>Gmaps</th>
+                                    <th>Foto</th>
                                     <th>Deskripsi</th>
                                     <th>Aksi</th>
                                  </tr>
@@ -65,10 +69,12 @@
                                        <td><?php echo $no++; ?></td>
                                        <td><?= $row['nama_wisata']; ?></td>
                                        <td><?= $row['lokasi_wisata']; ?></td>
-                                       <td><?= $row['g-map']; ?></td>
+                                       <td><?= substr($row['gmap'], 0, 25);  ?></td>
+                                       <td><img src="../assets/img/wisata/<?= $row['foto']; ?>" width="100" alt="" srcset=""></td>
                                        <td><?= $row['deskripsi_wisata']; ?></td>
                                        <td>
-                                          <button>Ubah</button>
+                                          <a href="./update-wisata?id_wisata=<?= $row['id_wisata']; ?>" class="btn btn-primary">Ubah</a>
+                                          <a href="./hapus-wisata?id_wisata=<?= $row['id_wisata']; ?>" class="btn btn-danger">Hapus</a>
                                        </td>
 
                                     </tr>
@@ -86,7 +92,7 @@
             <!-- /.container-fluid -->
          </div>
          <!-- /#page-wrapper -->
-         <footer class=" text-center"> 2022 &copy; Desa Wisata Karangtengah</a> </footer>
+         <footer class="text-center"> 2022 &copy; Desa Wisata Karangtengah</a> </footer>
       </div>
       <!-- /#wrapper -->
       <!-- jQuery -->

@@ -32,9 +32,9 @@
             <div class="row bg-title">
                <div class="col-lg-12">
 
-                  
+
                </div>
-               
+
                <!-- /.col-lg-12 -->
             </div>
             <!-- row -->
@@ -42,58 +42,10 @@
                <div class="col-md-12">
                   <div class="white-box">
                      <h3>Berita Desa</h3>
-                     <!-- <form class="form-horizontal form-material">
-                        <div class="form-group">
-                           <label class="col-md-12">Full Name</label>
-                           <div class="col-md-12">
-                              <input type="text" placeholder="Johnathan Doe" class="form-control form-control-line">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label for="example-email" class="col-md-12">Email</label>
-                           <div class="col-md-12">
-                              <input type="email" placeholder="johnathan@admin.com" class="form-control form-control-line" name="example-email" id="example-email">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Password</label>
-                           <div class="col-md-12">
-                              <input type="password" value="password" class="form-control form-control-line">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Phone No</label>
-                           <div class="col-md-12">
-                              <input type="text" placeholder="123 456 7890" class="form-control form-control-line">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Message</label>
-                           <div class="col-md-12">
-                              <textarea rows="5" class="form-control form-control-line"></textarea>
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-sm-12">Select Country</label>
-                           <div class="col-sm-12">
-                              <select class="form-control form-control-line">
-                                 <option>London</option>
-                                 <option>India</option>
-                                 <option>Usa</option>
-                                 <option>Canada</option>
-                                 <option>Thailand</option>
-                              </select>
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <div class="col-sm-12">
-                              <button class="btn btn-success">Update Profile</button>
-                           </div>
-                        </div>
-                     </form> -->
+
                      <div class="white-box">
                         <a href="./tambah-berita">
-                        <button class="btn btn-success">Tambah Berita</button>
+                           <button class="btn btn-success">Tambah Berita</button>
                         </a>
                         <br><br>
 
@@ -110,37 +62,43 @@
                               </thead>
                               <tbody>
 
-                              <?php 
-               include './config.php';
+                                 <?php
+                                 include './config.php';
 
-               $getBerita = mysqli_query($konfigur, "SELECT * FROM berita");
-               $no = 1;
-               while ($row = mysqli_fetch_array($getBerita)) { 
-                  ?>
+                                 $getBerita = mysqli_query($konfigur, "SELECT * FROM berita");
+                                 $no = 1;
+                                 while ($row = mysqli_fetch_array($getBerita)) {
+                                 ?>
 
-                                 <tr>
-                                    <td><?= $no++ ?></td>
-                                    <td><?= $row['judul_berita']; ?></td>
-                                    <td><?= $row['deskripsi']; ?></td>
-                                    <td><img src="../assets/img/beritaterkini/<?= $row['foto_berita']; ?>" width="100" ></td>
-                                    <td>
-                                       <button class="btn btn-primary">Ubah</button>
-                                    </td>
+                                    <tr>
 
-                                 </tr>
+                                       <td><?= $no++ ?></td>
+                                       <td><?= $row['judul_berita']; ?></td>
+                                       <td><?= $row['deskripsi']; ?></td>
+                                       <td><img src="../assets/img/beritaterkini/<?= $row['foto_berita']; ?>" width="100"></td>
+                                       <td><a href="./update-berita?idBerita=<?= $row['id_berita']; ?>">
+                                             <button class="btn btn-primary">Ubah</button>
+                                          </a>
+                                          <a href="./hapus-berita-aksi?idBerita=<?= $row['id_berita']; ?>">
+                                             <button class="btn btn-danger">Hapus</button>
+                                          </a>
+                                       </td>
 
-                                 </div>
-            <?php }mysqli_close($konfigur) ?>              
+                                    </tr>
 
-                              </tbody>
-                           </table>
                         </div>
+                     <?php }
+                                 mysqli_close($konfigur) ?>
 
+                     </tbody>
+                     </table>
                      </div>
+
                   </div>
                </div>
-               <!-- /.row -->
-           
+            </div>
+            <!-- /.row -->
+
             <!-- /.container-fluid -->
          </div>
          <!-- /#page-wrapper -->

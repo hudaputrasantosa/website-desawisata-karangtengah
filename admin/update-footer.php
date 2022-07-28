@@ -1,7 +1,7 @@
 <?php
-    include('config.php');
+include('config.php');
 
-    $query = $konfigur->query("SELECT * FROM footer limit 1");
+$query = $konfigur->query("SELECT * FROM footer limit 1");
 
 ?>
 
@@ -15,7 +15,7 @@
    <meta name="keywords" content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 4 admin, bootstrap 4, css3 dashboard, bootstrap 4 dashboard, severny admin bootstrap 4 dashboard, frontend, responsive bootstrap 4 admin template, my admin design, my admin dashboard bootstrap 4 dashboard template">
    <meta name="description" content="My Admin is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
    <meta name="robots" content="noindex,nofollow">
-   <title>Berita Desa</title>
+   <title>Update Footer</title>
    <link rel="canonical" href="https://www.wrappixel.com/templates/myadmin-lite/" />
    <!-- Favicon icon -->
    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
@@ -40,10 +40,7 @@
             <div class="row bg-title">
                <div class="col-lg-12">
 
-                  <ol class="breadcrumb">
-                     <li><a href="#">Dashboard</a></li>
-                     <li class="active">Blank Page</li>
-                  </ol>
+
                </div>
                <!-- /.col-lg-12 -->
             </div>
@@ -52,70 +49,70 @@
                <div class="col-md-12">
                   <div class="white-box">
                      <h3>Footer</h3>
-                   <?php 
-                     while ($row = mysqli_fetch_array($query)) { 
-                    ?>
+                     <?php
+                     while ($row = mysqli_fetch_array($query)) {
+                     ?>
                         <form class="form-horizontal form-material" action="update-footer-aksi.php" enctype="multipart/form-data" method="post">
-                        <div class="form-group">
-                           <label class="col-md-12">Email</label>
-                           <div class="col-md-12">
-                                <input name="email" type="email" placeholder="visi" class="form-control form-control-line" value="<?= $row['email'] ?>">
+                           <div class="form-group">
+                              <label class="col-md-12">Email</label>
+                              <div class="col-md-12">
+                                 <input name="email" type="email" placeholder="visi" class="form-control form-control-line" value="<?= $row['email'] ?>">
+                              </div>
                            </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Deskripsi</label>
-                           <div class="col-md-12">
-                                <textarea name="deskripsi" id="editor1" type="text" placeholder="Deskripsi" class="form-control form-control-line">
+                           <div class="form-group">
+                              <label class="col-md-12">Deskripsi</label>
+                              <div class="col-md-12">
+                                 <textarea name="deskripsi" id="editor1" type="text" placeholder="Deskripsi" class="form-control form-control-line">
                                     <?= $row['deskripsi'] ?>
                                 </textarea>
+                              </div>
                            </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Alamat</label>
-                           <div class="col-md-12">
-                                <textarea name="alamat" id="editor2" type="text" placeholder="alamat" class="form-control form-control-line">
+                           <div class="form-group">
+                              <label class="col-md-12">Alamat</label>
+                              <div class="col-md-12">
+                                 <textarea name="alamat" id="editor2" type="text" placeholder="alamat" class="form-control form-control-line">
                                     <?= $row['alamat'] ?>
                                 </textarea>
+                              </div>
                            </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Telepon</label>
-                           <div class="col-md-12">
-                                <input name="telepon" type="number" placeholder="No Telepon" class="form-control form-control-line" value="<?= $row['telepon'] ?>"/>
-                                    
+                           <div class="form-group">
+                              <label class="col-md-12">Telepon</label>
+                              <div class="col-md-12">
+                                 <input name="telepon" type="number" placeholder="No Telepon" class="form-control form-control-line" value="<?= $row['telepon'] ?>" />
+
+                              </div>
                            </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Link Maps</label>
-                           <div class="col-md-12">
-                                <input name="maps" type="text" placeholder="Link maps" class="form-control form-control-line" value="<?= $row['maps'] ?>"/>
+                           <div class="form-group">
+                              <label class="col-md-12">Link Maps</label>
+                              <div class="col-md-12">
+                                 <input name="maps" type="text" placeholder="Link maps" class="form-control form-control-line" value="<?= $row['maps'] ?>" />
+                              </div>
                            </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Username instagram</label>
-                           <div class="col-md-12">
-                                <input name="instagram" type="text" placeholder="username instagram" class="form-control form-control-line" value="<?= $row['instagram'] ?>"/>
+                           <div class="form-group">
+                              <label class="col-md-12">Username instagram</label>
+                              <div class="col-md-12">
+                                 <input name="instagram" type="text" placeholder="username instagram" class="form-control form-control-line" value="<?= $row['instagram'] ?>" />
+                              </div>
                            </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Username facebook</label>
-                           <div class="col-md-12">
-                                <input name="facebook" type="text" placeholder="username facebook" class="form-control form-control-line" value="<?= $row['facebook'] ?>"/>
+                           <div class="form-group">
+                              <label class="col-md-12">Username facebook</label>
+                              <div class="col-md-12">
+                                 <input name="facebook" type="text" placeholder="username facebook" class="form-control form-control-line" value="<?= $row['facebook'] ?>" />
+                              </div>
                            </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="col-md-12">Username twitter</label>
-                           <div class="col-md-12">
-                                <input name="twitter" type="text" placeholder="username twitter" class="form-control form-control-line" value="<?= $row['twitter'] ?>"/>
+                           <div class="form-group">
+                              <label class="col-md-12">Username twitter</label>
+                              <div class="col-md-12">
+                                 <input name="twitter" type="text" placeholder="username twitter" class="form-control form-control-line" value="<?= $row['twitter'] ?>" />
+                              </div>
                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                           <div class="col-sm-12">
-                              <input name="submit" type="submit" class="btn btn-success" value="Update">
+
+                           <div class="form-group">
+                              <div class="col-sm-12">
+                                 <input name="submit" type="submit" class="btn btn-success" value="Update">
+                              </div>
                            </div>
-                        </div>
-                     </form>
+                        </form>
                      <?php
                      }
                      ?>
@@ -142,9 +139,9 @@
       <!-- Custom Theme JavaScript -->
       <script src="js/myadmin.js"></script>
       <script>
-        CKEDITOR.replace('editor1');
-        CKEDITOR.replace('editor2');
-    </script>
+         CKEDITOR.replace('editor1');
+         CKEDITOR.replace('editor2');
+      </script>
 </body>
 
 </html>
