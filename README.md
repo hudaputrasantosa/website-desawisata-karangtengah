@@ -45,3 +45,4 @@ diberikan oleh pemerintah Desa Karang Tengah
 | 3      | Membuat rancangan wireframe web       | 21 April 2022  |
 | 4      | Pengkodingan web sesuai dengan rancangan yang telah disusun      | 23 April 2022 |
 | 5      | Menyusun laporan      | 14 Mei 2022  |
+| 6      | Melakukan Presentasi, Pelatihan serta serah terima produk      | 28 Juli 2022  |
